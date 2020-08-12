@@ -1,0 +1,65 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+.fa-exclamation-circle {
+  color: $primary-cta;
+  margin-left: 5px;
+}
+.v-element-nav .dropdown-item .far {
+  margin-right: 5px;
+  min-width: 20px;
+}
+.v-showhide {
+
+  .fas {
+    padding: 2px 15px;
+    float: right;
+    transition: transform 500ms;
+  }
+
+  &.v-closed {
+
+    .fas {
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+}
+
+.v-app-choser {
+
+  .fas {
+    font-size: 20px;
+    padding: 18px 20px;
+    cursor: pointer;
+    background: #000;
+
+    @media (max-width: 768px) {
+      padding: 17px 10px;
+      font-size: 14px;
+    }
+
+  }
+
+  &.v-open {
+
+    .fas {
+      margin-bottom: -3px;
+      padding-bottom: 21px;
+      color: #fff;
+    }
+    
+  }
+
+}
+
+.btn > i {
+  margin: 0 5px;
+}
+
+

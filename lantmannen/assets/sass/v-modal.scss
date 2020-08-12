@@ -1,0 +1,39 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+.v-modal {
+
+  .v-modal-large {
+    max-width: 1000px;
+  }
+
+  .modal-title {
+    color: #000;
+  }
+  
+  .modal-body {
+
+    h6 {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #000;
+    }
+
+    .v-form-h6-wannabe {
+      font-size: 1rem;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .v-form-block {
+      margin-bottom: 30px;
+
+      .form-check {
+        margin-bottom: 10px;
+      }
+
+    }
+
+  }
+
+}

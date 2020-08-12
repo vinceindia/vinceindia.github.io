@@ -1,0 +1,206 @@
+/* Import variables */
+/* line 4, ../sass/v-default.scss */
+html {
+  height: 100%;
+  box-sizing: content-box;
+}
+
+/* line 9, ../sass/v-default.scss */
+body {
+  font-family: "Roboto",Helvetica,Arial,Verdana,sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 20, ../sass/v-default.scss */
+a {
+  color: #0579C9;
+}
+/* line 23, ../sass/v-default.scss */
+a:hover {
+  color: #025c7d;
+}
+
+/* Divese classes */
+/* line 30, ../sass/v-default.scss */
+.v-no-show {
+  display: none;
+}
+
+/* line 34, ../sass/v-default.scss */
+.v-wannabe-link {
+  color: #0579C9;
+  cursor: pointer;
+}
+/* line 38, ../sass/v-default.scss */
+.v-wannabe-link:hover {
+  color: #025c7d;
+}
+
+/* line 44, ../sass/v-default.scss */
+.v-last-saved {
+  background-color: #fff3cd;
+  padding: 5px 10px;
+  color: #888;
+  display: none;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* line 54, ../sass/v-default.scss */
+.v-popover {
+  color: #0579C9;
+  margin-left: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #0579C9;
+}
+
+/* line 61, ../sass/v-default.scss */
+.v-icons {
+  display: block;
+}
+/* line 64, ../sass/v-default.scss */
+.v-icons i {
+  margin: 10px 10px 2px 0;
+  color: #999;
+}
+/* line 70, ../sass/v-default.scss */
+.v-icons a i {
+  color: inherit;
+}
+@media (max-width: 768px) {
+  /* line 61, ../sass/v-default.scss */
+  .v-icons {
+    display: inline-block;
+  }
+}
+
+/* line 81, ../sass/v-default.scss */
+.v-favorite {
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  left: auto;
+  bottom: auto;
+}
+/* line 90, ../sass/v-default.scss */
+.v-favorite.v-right-bottom {
+  right: 13px;
+  bottom: 15px;
+  top: auto;
+  left: auto;
+}
+/* line 97, ../sass/v-default.scss */
+.v-favorite.v-left-top {
+  left: 13px;
+  top: 15px;
+  right: auto;
+  bottom: auto;
+}
+/* line 104, ../sass/v-default.scss */
+.v-favorite.v-left-bottom {
+  left: 13px;
+  bottom: 15px;
+  right: auto;
+  top: auto;
+}
+/* line 111, ../sass/v-default.scss */
+.v-favorite.v-chosen {
+  color: #ff0000;
+}
+
+/* line 117, ../sass/v-default.scss */
+.table .v-favorite {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+@media (max-width: 768px) {
+  /* line 117, ../sass/v-default.scss */
+  .table .v-favorite {
+    position: relative;
+    left: 10px;
+    top: 0;
+    margin: 10px 0;
+  }
+}
+
+/* Red ball to indicate new stuff */
+/* line 132, ../sass/v-default.scss */
+.v-newstuff {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 0 2px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+/* Link to UI Kitchen Sink */
+/* line 150, ../sass/v-default.scss */
+.v-docs {
+  position: fixed;
+  z-index: 2000;
+  padding: 5px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  right: -29px;
+  bottom: 3px;
+  transform: rotate(-45deg);
+  color: #fff;
+  background-color: #ff8f00;
+}
+/* line 162, ../sass/v-default.scss */
+.v-docs:hover {
+  text-decoration: none;
+  background-color: #a55c00;
+  color: #fff;
+}
+
+/* Overlay */
+/* line 172, ../sass/v-default.scss */
+.v-aside-open-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 100;
+}
+
+/* line 184, ../sass/v-default.scss */
+.v-showhide {
+  cursor: pointer;
+}
+/* line 187, ../sass/v-default.scss */
+.v-showhide:hover {
+  color: #666;
+}
+
+/* vince-Live logo svg styles*/
+.vince_live {
+  padding: 4px !important;
+}
+
+.logo_vince_live {
+  width: 178px;
+  height: 41px;
+}
+/* vince-Live logo svg styles End*/

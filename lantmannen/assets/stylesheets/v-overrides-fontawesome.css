@@ -1,0 +1,53 @@
+/* Import variables */
+/* line 4, ../sass/v-overrides-fontawesome.scss */
+.fa-exclamation-circle {
+  color: #0579C9;
+  margin-left: 5px;
+}
+
+/* line 8, ../sass/v-overrides-fontawesome.scss */
+.v-element-nav .dropdown-item .far {
+  margin-right: 5px;
+  min-width: 20px;
+}
+
+/* line 14, ../sass/v-overrides-fontawesome.scss */
+.v-showhide .fas {
+  padding: 2px 15px;
+  float: right;
+  transition: transform 500ms;
+}
+/* line 22, ../sass/v-overrides-fontawesome.scss */
+.v-showhide.v-closed .fas {
+  transform: rotate(180deg);
+}
+/* line 28, ../sass/v-overrides-fontawesome.scss */
+.v-showhide:hover {
+  opacity: 0.8;
+}
+
+/* line 36, ../sass/v-overrides-fontawesome.scss */
+.v-app-choser .fas {
+  font-size: 20px;
+  padding: 18px 20px;
+  cursor: pointer;
+  background: #000;
+}
+@media (max-width: 768px) {
+  /* line 36, ../sass/v-overrides-fontawesome.scss */
+  .v-app-choser .fas {
+    padding: 17px 10px;
+    font-size: 14px;
+  }
+}
+/* line 51, ../sass/v-overrides-fontawesome.scss */
+.v-app-choser.v-open .fas {
+  margin-bottom: -3px;
+  padding-bottom: 21px;
+  color: #fff;
+}
+
+/* line 61, ../sass/v-overrides-fontawesome.scss */
+.btn > i {
+  margin: 0 5px;
+}

@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Vince VIO</title>
+
+    <link rel="icon" href="assets/images/icons/VinceArtboard-116x16.png" type="image/png" sizes="16x16"/>
+    <link rel="icon" href="assets/images/icons/VinceArtboard-132x32.png" type="image/png" sizes="32x32"/>
+    <link rel="apple-touch-icon" href="assets/images/icons/VinceArtboard-160x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/icons/VinceArtboard-174x74.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/icons/VinceArtboard-1120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/icons/VinceArtboard-1152x152.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+
+    <!-- Twitter Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Imports all custom css -->
+    <link href="assets/stylesheets/import.css" rel="stylesheet">
+      <link href="assets/stylesheets/v-security.css" rel="stylesheet">
+          <link href="assets/stylesheets/v-items-organizers.css" rel="stylesheet">
+
+    <!-- Google-font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="overflow-hidden">
+ 
+
+    
+
+    <div class="tab-content">
+
+      <header class="v-editor-header p-0 ">
+<div class="pb-3  vince_logo border-bottom">
+  <h1 class="text-left ml-1"><a href="#" class="logo"><img class="w-80" src="./assets/images/logo1.svg"></a></h5>
+  <!-- <h6 class="text-center">Item Organizer</h6> -->
+</div>
+        <div class="v-editor-header-head">
+          <span class="v-editor-header-toggle"><i class="fas fa-bars"></i></span>
+          <!-- <h1 class="v-trigger-settings">Export articles from M3</h5> -->
+        </div>
+
+       <div class="v-editor-header-body left_navigation-vio mt-0">
+
+         <ul class="nav nav-tabs v-nav" role="tablist">
+           <!-- <li class="nav-item v-nav-item"><a class="nav-link v-make-workflow active" id="editor0-tab"
+                data-toggle="tab" href="#editor0" role="tab" aria-controls="editor0" aria-selected="true"></a></li> -->
+           <li class="nav-item v-nav-item"><a class="nav-link " href="./prototype-dashboard.html" role="tab" aria-controls="editor1"
+               aria-selected="true"><span><i class="fas fa-home pr-2"></i></span>Dashboard</a></li>
+            <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab" aria-controls="editor2"
+                href="./prototype-import-process.html" aria-selected="false"><i
+                  class="nav-icon far fa fa-upload fleft pr-2"></i> Import Process</a></li>
+            <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab" aria-controls="editor2"
+                href="./prototype-supplier-process.html" aria-selected="false"><i
+                  class="nav-icon fas fa-user fleft pr-2"></i> Supplier Mappings</a></li>
+               <li class="nav-item v-nav-item"><a class="nav-link active" id="editor2-tab" role="tab"
+               aria-controls="editor2" href="./prototype-vio-new-items.html" aria-selected="false"><i
+                 class="nav-icon far fa-file-alt fleft pr-2"></i> Items</a></li>
+                          
+           <li class="nav-item v-nav-item"><a class="nav-link " id="editor4-tab"
+               href="./prototype-vio-new-attributes-modal.html" role="tab" aria-controls="editor4"
+               aria-selected="false"><span><i class="fas fa-border-none  pr-2"></i></span> Attributes Model</a></li>
+           <li class="nav-item v-nav-item"><a class="nav-link" id="editor5-tab"
+               href="./prototype-vio-new-attributes.html" role="tab" aria-controls="editor5"
+               aria-selected="false"><span><i class="fas fa-bezier-curve  pr-2"></i></span> Attributes</a></li>
+   <ul class="nav nav-stacked" id="accordion1">
+
+     <li class="panel "> <a data-toggle="collapse" class="arrow" data-parent="#accordion1" href="#firstLink"><span
+           class="common_icons pr-2"><i class="fa fa-search" aria-hidden="true"></i></span>Lookup
+         <i class="fas fa-chevron-right common_icon"></i>
+         <i class="fas fa-angle-down common_icon"></i>
+       </a>
+
+       <ul id="firstLink" class="collapse expand_collapse">
+         <li><a class="nav-link " id="editor2-tab" role="tab" aria-controls="editor2" href="#" aria-selected="false">
+             <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+             Item Group</a></li>
+         <li><a class="nav-link active" id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+             aria-selected="false">
+             <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+             Product Group</a></li>
+         <li><a class="nav-link active" id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+             aria-selected="false">
+             <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+             Item Type</a></li>
+         <li><a class="nav-link active" id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+             aria-selected="false">
+             <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+             Supplier
+           </a></li>
+       </ul>
+
+     </li>
+   </ul>
+
+           <li class="v-divider v-nav-item"></li>
+
+         </ul>
+         <div class="mobile_view ">
+           <ul role="tablist" class="nav nav-tabs v-nav">
+             <li class="nav-item v-nav-item"><a class="nav-link " href="./prototype-dashboard.html" role="tab" aria-controls="editor1"
+                 aria-selected="true"><span><i class="fas fa-home pr-2"></i></span></a></li>
+                 <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                     aria-controls="editor2" href="./prototype-import-process.html" aria-selected="false"><i
+                       class="nav-icon far fa fa-upload fleft pr-2"></i> </a></li>
+                 <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                     aria-controls="editor2" href="./prototype-supplier-process.html" aria-selected="false"><i
+                       class="nav-icon fas fa-user fleft pr-2"></i> </a></li>
+             <li class="nav-item v-nav-item"><a class="nav-link active" id="editor2-tab" role="tab"
+                 aria-controls="editor2" href="./prototype-vio-new-items.html" aria-selected="false"><i
+                   class="nav-icon far fa-file-alt fleft pr-2"></i> </a></li>
+             <li class="nav-item v-nav-item"><a class="nav-link " id="editor4-tab"
+                 href="./prototype-vio-new-attributes-modal.html" role="tab" aria-controls="editor4"
+                 aria-selected="false"><span><i class="fas fa-border-none  pr-2"></i></span> </a>
+             </li>
+             <li class="nav-item v-nav-item"><a class="nav-link" id="editor5-tab"
+                 href="./prototype-vio-new-attributes.html" role="tab" aria-controls="editor5"
+                 aria-selected="false"><span><i class="fas fa-bezier-curve  pr-2"></i></span> </a>
+             </li>
+
+           </ul>
+         </div>
+
+       </div>
+
+        <div class="v-header-actions">
+  <li class="nav-item v-nav-item no-draggable"><a href="./login.html" class="nav-link nuxt-link-active logout"><i
+        class="fas fa-user-circle ml-2 mr-2"></i> <span class="ml-2"> Signout</span> <i
+        class="fas fa-sign-out-alt float-right p-1"></i></a></li>
+    
+
+        </div><!-- end: v-navbar -->
+
+      </header>
+
+      <div id="editor0" class="tab-pane fade show active" role="tabpanel" aria-labelledby="editor0-tab">
+
+        <main class="v-editor-main pr-0 mt-2 ">
+
+          <!-- <div class="v-editor-main-header">  
+            Edit workflow
+          </div>                  -->
+
+       <div class="v-dashboard-main-content p-0 overflow-auto">
+         <main class="v-general-main m-0 bg-white p-4 vio_form_fields">
+
+           <div class="v-general-main-header">
+             <a class="v-back" href="./prototype-vio-new-items.html"><i class="fas fa-chevron-left"></i> Back</a>
+             <h5>New Attributes</h5>
+           </div>
+
+           <div class="v-general-main-content">
+
+             <div class="v-list v-col2">
+
+               <div class="mb-6">
+
+                 <div class="form-group">
+                   <label for="">Attribute ID:</label>
+                   <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                     placeholder="Attribute ID:"
+                     value="">
+                 </div>
+                 <div class="form-group">
+                   <label for="">Attribute Name</label>
+                   <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                     placeholder="Attribute Name" value="">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="exampleInputEmail1">Status</label>
+                   <input type="email" class="form-control col-md-12" id="exampleInputEmail1"
+                     aria-describedby="emailHelp" placeholder="Status" value="">
+                 </div>
+                   <div class="form-group">
+                     <label for="exampleInputEmail1">Seq no String:</label>
+                     <input type="email" class="form-control col-md-12" id="exampleInputEmail1"
+                       aria-describedby="emailHelp" placeholder="Seq no String:" value="">
+                   </div>
+
+               </div>
+               
+                 <div class="mb-6">
+
+                   <div class="form-group">
+                     <label for="">Main Attribute</label>
+                     <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                       placeholder="Main Attribute"
+                       value="">
+                   </div>
+                   <div class="form-group">
+                     <label for="">Control Obj</label>
+                     <input type="text" class="form-control col-md-12" id="" aria-describedby="" placeholder="Control Obj"
+                       value="">
+                   </div>
+
+                   <div class="form-group">
+                     <label for="exampleInputEmail1">Plan Attribute </label>
+                     <input type="email" class="form-control col-md-12" id="exampleInputEmail1"
+                       aria-describedby="emailHelp" placeholder="Plan Attribute" value="">
+                   </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Cost Attribute </label>
+                      <input type="email" class="form-control col-md-12" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Cost Attribute" value="">
+                    </div>
+
+                 </div>
+
+             </div>
+
+           </div><!-- end: v-general-main-content -->
+
+           <div class="v-general-main-toolbar">
+             <a href="./prototype-vio-new-attributes.html" class="btn btn-primary btn-lg">Create
+             </a><a href="./prototype-vio-new-attributes.html" class="btn btn-outline-primary btn-lg mr-auto">Cancel</a>
+           </div>
+
+
+         </main>
+       </div>
+
+
+
+
+         </div>
+        </main>
+        
+
+      
+      </div>
+
+<div class="modal fade v-modal" id="are-you-sure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to delete?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary v-delete-billing" data-dismiss="modal">Yes</button>
+            <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- end: modal -->
+     <div class="modal fade" id="role_add_user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog modal-dialog-scrollable" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Connect Roles to User</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body">
+                     <div class="v-list v-col1">
+                       <div class="row p-0">
+                           <div class="col-md-12">
+                               <h6 class="p-0">Roles</h6>
+                           </div>
+
+                       </div>
+                       <div class="row p-0">
+                           <div class="col-md-12">
+                               <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                                   placeholder="SAL" value="">
+                           </div>
+                       </div>
+                         <div class="row p-0">
+                             <div class="col-md-12">
+                                 <h6 class="p-0">User</h6>
+                             </div>
+
+                         </div>
+                         <div class="row p-0">
+                             <div class="col-md-12">
+                                 <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                                     placeholder="Filter Search" value="">
+                             </div>
+                         </div>
+                         <div class="row p-0">
+                             <div class="v-table-grid-filter_result pt-1  col-md-12">
+                               <table
+                                   class="table table-striped v-table v-with-sortable-headers tablesorter tablesorter-default tablesorter47a4901e8ec01"
+                                   role="grid">
+                                   <thead>
+                                       <tr role="row" class="tablesorter-headerRow">
+                                           <th tabindex="0" data-column="0"
+                                               class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                               role="columnheader" aria-disabled="false" unselectable="on"
+                                               aria-sort="none"
+                                               aria-label="Name: No sort applied, activate to apply an ascending sort"
+                                               style="user-select: none;">
+                                               <div class="tablesorter-header-inner" title="Sort this column"><input
+                                                       type="checkbox" name="checkall" id="checkall"
+                                                       onclick="check_uncheck_checkbox(this.checked);"
+                                                       value="Select All"></div>
+                                           </th>
+                                           <th tabindex="0" data-column="1"
+                                               class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                               role="columnheader" aria-disabled="false" unselectable="on"
+                                               aria-sort="none"
+                                               aria-label="Email: No sort applied, activate to apply an ascending sort"
+                                               style="user-select: none;">
+                                               <div class="tablesorter-header-inner" title="Sort this column">Code</div>
+                                           </th>
+                                           <th tabindex="0" data-column="2"
+                                               class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                               role="columnheader" aria-disabled="false" unselectable="on"
+                                               aria-sort="none"
+                                               aria-label="Permission: No sort applied, activate to apply an ascending sort"
+                                               style="user-select: none;">
+                                               <div class="tablesorter-header-inner" title="Sort this column">
+                                                   Description</div>
+                                           </th>
+
+                                       </tr>
+                                   </thead>
+                                   <tbody aria-live="polite" aria-relevant="all">
+                                       <tr role="row">
+                                           <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                       id="checkall" onclick="check_uncheck_checkbox(this.checked);"
+                                                       value="Select All"></a></td>
+                                           <td data-attr="Name"><a href="#">A_API</a></td>
+                                           <td data-attr="Description">API - Application Programming Interface</td>
+
+                                       </tr>
+                                       <tr role="row">
+                                           <td><input type="checkbox" name="checkall" id="checkall"
+                                                   onclick="check_uncheck_checkbox(this.checked);" value="Select All">
+                                           </td>
+                                           <td data-attr="Name"><a href="#">A_APICOPY</a></td>
+                                           <td data-attr="Description"> Copy A_API Role Write</td>
+
+                                       </tr>
+                                       <tr role="row">
+                                           <td><input type="checkbox" name="checkall" id="checkall"
+                                                   onclick="check_uncheck_checkbox(this.checked);" value="Select All">
+                                           </td>
+                                           <td data-attr="Name"><a href="#">A_AUX</a></td>
+                                           <td data-attr="Description">Special Occasion Run</td>
+
+                                       </tr>
+
+
+
+                                   </tbody>
+                               </table>
+                             </div>
+                         </div>
+
+                     </div>
+
+
+
+
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                     <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">Cancel</button>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <div class="v-aside-open-overlay"></div>
+
+    <a href="../index.html" class="v-docs">Docs</a>
+
+    <!-- Twitter Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Table sorter -->
+    <script src="assets/js/jquery.tablesorter.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- Custom javascript -->
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/add-fake-content.js"></script>
+
+  </body>
+</html>

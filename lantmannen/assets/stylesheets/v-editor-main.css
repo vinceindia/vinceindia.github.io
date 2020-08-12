@@ -1,0 +1,246 @@
+/* Import variables */
+/* line 4, ../sass/v-editor-main.scss */
+main.v-editor-main {
+  background-color: #f7f7f7;
+  padding: 0 380px 0 250px;
+  transition: padding-left 500ms, padding-right 500ms;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 13, ../sass/v-editor-main.scss */
+main.v-editor-main .v-toggle-aside {
+  cursor: pointer;
+}
+/* line 17, ../sass/v-editor-main.scss */
+main.v-editor-main .v-editor-main-header {
+  position: relative;
+  padding: 10px 40px 10px 20px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+/* line 27, ../sass/v-editor-main.scss */
+main.v-editor-main .v-editor-main-header a:hover {
+  text-decoration: none;
+}
+/* line 31, ../sass/v-editor-main.scss */
+main.v-editor-main .v-editor-main-header .fas {
+  margin-right: 5px;
+}
+/* line 37, ../sass/v-editor-main.scss */
+main.v-editor-main .v-editor-main-content {
+  overflow-y: auto;
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+/* line 45, ../sass/v-editor-main.scss */
+main.v-editor-main .v-editor-main-content h2 {
+  margin: 20px 0 10px;
+  font-size: 22px;
+}
+/* line 52, ../sass/v-editor-main.scss */
+main.v-editor-main.v-hidden {
+  padding-right: 20px;
+}
+
+/* line 58, ../sass/v-editor-main.scss */
+.v-workflow {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+/* line 62, ../sass/v-editor-main.scss */
+.v-workflow .v-delete {
+  margin: 0 10px;
+  float: right;
+}
+/* line 67, ../sass/v-editor-main.scss */
+.v-workflow select {
+  border: none;
+  outline: none;
+  width: 30px;
+  -webkit-appearance: none;
+  margin-left: 5px;
+  background-color: #0579C9;
+  color: #fff;
+  text-align: center;
+  padding: 0 5px 0 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* line 80, ../sass/v-editor-main.scss */
+.v-workflow select::-ms-expand {
+  display: none;
+}
+/* line 84, ../sass/v-editor-main.scss */
+.v-workflow select:hover {
+  background-color: #0579C9;
+  color: #fff;
+}
+/* line 88, ../sass/v-editor-main.scss */
+.v-workflow select:hover option {
+  background-color: #fff;
+  color: #000;
+}
+/* line 99, ../sass/v-editor-main.scss */
+.v-workflow > li:first-of-type > ul:first-of-type {
+  margin-top: 20px;
+}
+/* line 105, ../sass/v-editor-main.scss */
+.v-workflow li {
+  margin: 10px 0;
+  position: relative;
+  text-align: left;
+}
+/* line 111, ../sass/v-editor-main.scss */
+.v-workflow ul {
+  margin-left: 0;
+}
+/* line 114, ../sass/v-editor-main.scss */
+.v-workflow ul li {
+  background-color: #fff;
+  padding: 5px 0 5px 5px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+/* line 120, ../sass/v-editor-main.scss */
+.v-workflow ul li .v-level-indicator {
+  display: none;
+}
+/* line 124, ../sass/v-editor-main.scss */
+.v-workflow ul li select {
+  background-color: transparent;
+  color: #0579C9;
+}
+/* line 128, ../sass/v-editor-main.scss */
+.v-workflow ul li select:hover {
+  background-color: #0579C9;
+  color: #fff;
+}
+/* line 135, ../sass/v-editor-main.scss */
+.v-workflow ul li > ul {
+  margin-left: 15px;
+  border-top: 2px solid #f7f7f7;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 141, ../sass/v-editor-main.scss */
+.v-workflow ul li > ul li {
+  background: #fff;
+  margin: 5px 0 0;
+}
+/* line 145, ../sass/v-editor-main.scss */
+.v-workflow ul li > ul li .v-level-indicator {
+  display: inline-block;
+  transform: rotate(90deg);
+  color: #e0e0e0;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+/* line 153, ../sass/v-editor-main.scss */
+.v-workflow ul li > ul li > ul {
+  margin-left: 30px;
+}
+
+/* line 168, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow {
+  overflow-x: auto;
+}
+/* line 171, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow > li {
+  display: flex;
+  align-items: baseline;
+}
+/* line 175, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow > li > ul {
+  position: relative;
+  margin-right: 30px;
+}
+/* line 179, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow > li > ul > li {
+  padding: 10px 20px;
+}
+@media (max-width: 768px) {
+  /* line 179, ../sass/v-editor-main.scss */
+  .v-expandable-details .v-workflow > li > ul > li {
+    margin-bottom: 20px;
+  }
+}
+/* line 188, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow > li > ul:first-of-type {
+  margin-top: 0;
+}
+/* line 192, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow > li > ul:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #666;
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+  right: -18px;
+  top: 25px;
+}
+@media (max-width: 768px) {
+  /* line 192, ../sass/v-editor-main.scss */
+  .v-expandable-details .v-workflow > li > ul:after {
+    transform: rotate(135deg);
+    top: auto;
+    right: auto;
+    bottom: 5px;
+    left: 25px;
+  }
+}
+/* line 215, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow > li > ul:last-of-type:after {
+  display: none;
+}
+@media (max-width: 768px) {
+  /* line 223, ../sass/v-editor-main.scss */
+  .v-expandable-details .v-workflow > li > ul:last-of-type {
+    margin-bottom: 0;
+  }
+  /* line 226, ../sass/v-editor-main.scss */
+  .v-expandable-details .v-workflow > li > ul:last-of-type > li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 171, ../sass/v-editor-main.scss */
+  .v-expandable-details .v-workflow > li {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+/* line 245, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow ul li {
+  background-color: #f9f9f9;
+  padding: 5px 10px 6px 20px;
+}
+/* line 249, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow ul li > ul {
+  margin-left: 0;
+}
+/* line 252, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow ul li > ul li {
+  background: #fff;
+  white-space: nowrap;
+}
+/* line 256, ../sass/v-editor-main.scss */
+.v-expandable-details .v-workflow ul li > ul li > ul {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  /* line 168, ../sass/v-editor-main.scss */
+  .v-expandable-details .v-workflow {
+    margin-bottom: 5px;
+  }
+}

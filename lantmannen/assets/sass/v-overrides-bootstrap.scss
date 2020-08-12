@@ -1,0 +1,345 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+table, .table {
+  border-bottom: 1px solid #dee2e6;
+  margin: 20px 0;
+  border-top: none;
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  thead {
+
+    tr {
+      border-top: none;
+
+      th {
+        font-weight: 700;
+        white-space: nowrap;
+        border-top: none;
+        border-bottom: none;
+      }
+
+    }
+
+  }
+
+  th, td {
+    padding: 10px;
+    vertical-align: middle;
+    position: relative;
+  }
+  tr {
+    border-top: 1px solid #000;
+
+    @media (max-width: 768px) {
+      border-top: none;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    margin: 10px 0;
+  }
+
+}
+
+.v-general-main-content .v-table:first-child {
+  margin-top: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fcfcfc;
+
+  @media (max-width: 768px) {
+    background-color: #fff;    
+  }
+
+}
+
+.btn-primary {
+  background-color: $primary-cta;
+  border-color: $primary-cta;
+
+  &:hover, &:focus, &:active {
+    background-color: $primary-cta-hover;
+  }
+
+}
+.btn-outline-primary {
+  color: $primary-cta;
+  border-color: $primary-cta;
+
+  &:hover, &:focus, &:active {
+    background-color: $primary-cta-hover;
+    color: #fff;
+  }
+
+}
+.btn-link {
+  color: $primary-cta;  
+
+  &:hover {
+    color: $primary-cta;
+  }
+
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: $primary-cta;
+  border-color: $primary-cta;
+  color: #fff;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: $primary-cta;
+  border-color: $primary-cta;
+  color: #fff;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+  background-color: $primary-cta;
+  border-color: $primary-cta;
+  color: #fff;
+}
+aside.v-aside .v-aside-head .btn {
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.v-workflow-defaults .form-group {
+  margin: 0 20px;
+}
+
+.v-workflow-defaults .btn {
+  margin-right: 20px;
+}
+.v-header-actions-primary .btn {
+  margin-bottom: 10px;
+  transition: background-color 500ms, color 500ms;
+}
+.btn-lg {
+
+  @media (max-width: 768px) {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+  }
+
+}
+
+.form-group .btn {
+  margin-top: 10px;
+}
+
+main.v-general-main {
+
+  .nav-tabs {
+    border: none;
+
+    .nav-link {
+      border: none;
+
+      &.active {
+        color: #000;
+        font-weight: 700;
+        background-color: transparent;
+        border: none;
+      }
+
+      &:focus, &:hover {
+        border: none;
+      }
+
+    }
+
+  }
+
+  .tab-pane {
+    position: relative;
+  }
+
+}
+
+.v-element-nav .dropdown-toggle::after {
+  display: none;
+}
+.dropleft .dropdown-toggle::before {
+  display: none;
+}
+
+.v-select-api-search .form-group {
+  margin-bottom: 5px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+
+aside.v-aside .form-group {
+  padding: 10px;
+  background-color: $primary-background-color;
+}
+
+aside.v-aside .form-group label {
+  font-weight: 600;
+}
+
+aside.v-aside .form-group label span {
+  font-weight: 400;
+  display: block;
+  font-size: smaller;
+}
+
+.form-check-inline .form-check-input {
+  margin-top: -5px;
+}
+
+.alert {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+
+    li {
+      list-style: square;
+      margin-left: 20px;
+    }
+
+  }
+
+  @media (max-width: 1400px) {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}
+.v-general-main-header + .alert {
+  margin-top: 20px;
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #f9f9f9;
+  padding: 16px 30px;
+  background: #000;
+  text-transform: uppercase;
+  margin: -0.5rem 2rem -0.5rem -1rem;
+
+  @media (max-width: 991px) {
+    margin-right: auto;
+  }
+
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 15px 20px;
+    margin-right: auto;
+  }
+
+}
+
+.navbar-nav {
+
+  .active {
+    font-weight: 700;
+
+    a {
+      color: #000;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    order: 0;
+    width: 100%;
+
+    .nav-link {
+      padding: 10px 5px 5px;
+    }
+
+  }
+
+}
+
+.pagination {
+  margin-bottom: 15px;
+}
+
+.v-fullwidth .pagination {
+  margin: 15px 20px;
+}
+
+.nav-link, .dropdown-item {
+  position: relative;
+}
+
+.dropdown-header {
+  color: #000;
+  font-weight: 600;
+}
+
+hr {
+  margin: 10px 0 20px;
+}
+
+aside.v-aside .v-aside-body hr + h2 {
+  margin-top: 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.v-aside .form-group + .btn {
+  padding-top: 0;
+}
+
+.form-control + .form-control {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .v-general-header .navbar-collapse {
+    margin-top: 10px;
+  }
+
+  .v-general-header .navbar-collapse.show {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+  }
+
+  .v-general-header .navbar-nav .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .v-general-header .dropdown-item {
+    padding: 10px 5px 5px;    
+    color:  $primary-cta;
+  }
+
+}
+
+
+
+
+

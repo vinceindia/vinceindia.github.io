@@ -1,0 +1,245 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+.v-select-api-wrapper {
+  display: inline-flex;
+  height: 100%;
+  padding: 0 40px 0 0;
+}
+
+.v-select-api {
+  background-color: #fff;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .v-select-api-actions {
+
+    a {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+  }
+
+  .v-select-api-head {
+    padding: 5px 0;
+
+    h3 {
+      font-size: 22px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      font-size: 14px;
+      color: #999;
+      font-weight: 400;
+    }
+
+  }
+
+  .v-select-api-search {
+    padding: 10px 0;
+  }
+
+  .v-select-api-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-bottom: 20px;
+    box-shadow: inset 0 10px 8px -8px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    h3 {
+      font-size: 16px;
+      padding: 15px 0 10px;
+      font-weight: 700;
+      margin: 15px 0 5px;
+    }
+
+    ul {
+
+      li {
+        background-color: $primary-background-color;
+        margin: 5px 0;
+        padding: 0;
+
+        > label {
+          background-color: $primary-background-color;
+          display: flex;
+          align-items: center;
+
+          input {
+            display: block;
+            margin: 15px;
+            cursor: pointer;
+          }
+
+          &.v-checked-default {
+            filter: brightness(95%);
+
+            &:hover {
+              filter: brightness(95%);
+            }
+
+          }
+
+          &:hover {
+            filter: brightness(98%);
+          }
+
+        }
+
+        .v-text {
+          display: block;
+          padding: 10px; 
+          cursor: pointer;
+          flex-grow: 1;
+
+          span:first-of-type {
+            font-weight: 600;
+            display: block;
+          }
+          span:last-of-type {
+            font-weight: 400;            
+          }
+
+        }
+
+        a {
+          display: flex;
+          padding: 10px;
+          align-items: center;
+
+          span {
+            flex-grow: 1;
+
+            span {
+              font-size: smaller;
+              display: block;
+              font-weight: 400;
+              color: #888;
+            }
+
+          }
+
+          &.v-active {
+            box-shadow: inset 0 0 0 3px $primary-cta;
+
+            &.v-ok {
+              box-shadow: inset 0 0 0 3px darken($background-green, 50%);
+            }
+
+            &.v-not-ok {
+              box-shadow: inset 0 0 0 3px darken($background-pink, 50%);             
+            }
+
+          }
+
+          &.v-ok {    
+            color: $primary-color;       
+            background-color: $background-green;
+
+            span span {
+              color: lighten($primary-color, 30%); 
+              background-color: inherit;
+            }
+
+          }
+
+          &.v-not-ok { 
+            color: $primary-color;            
+            background-color: $background-pink;
+
+            span span {
+              color: lighten($primary-color, 30%); 
+              background-color: inherit;
+            }
+
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+
+        }
+
+      }
+
+    }
+
+    > ul:first-child {
+      margin-top: 15px;
+    }
+
+  }
+
+  &:after {
+    content: "";
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 10px;
+    box-shadow: inset 0 -10px 8px -8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+  }
+
+  &.add-api {
+    align-self: flex-start;
+
+    &:after {
+      box-shadow: none;      
+    }
+  
+  }
+
+  .v-select-api-list-icon {
+    margin: 0 10px;
+    flex-grow: 0;
+    color: #666;
+
+    &:first-child {
+      margin: 0 15px 0 0;
+    }
+    
+    &:last-child {
+      margin: 0 0 0 15px;
+    }
+    
+  }
+
+}
+
+.v-aside {
+
+  .v-select-api-wrapper {
+    padding: 0;
+  }
+
+  .v-select-api {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .v-select-api:after {
+    display: none;
+  }
+
+}
+
+
+
+
+
+

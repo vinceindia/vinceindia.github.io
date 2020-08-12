@@ -1,0 +1,273 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+main.v-editor-main {
+  background-color: $primary-background-color;
+  padding: 0 380px 0 250px;
+  transition: padding-left 500ms, padding-right 500ms;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .v-toggle-aside {
+    cursor: pointer;  
+  }
+
+  .v-editor-main-header {
+    position: relative;
+    padding: 10px 40px 10px 20px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .fas {
+      margin-right: 5px;
+    }
+
+  }
+
+  .v-editor-main-content {
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 22px;
+    }
+
+  }
+
+  &.v-hidden {
+    padding-right: 20px;
+  }
+
+}
+
+.v-workflow {
+  margin-left: 0;
+  margin-bottom: 20px;
+
+  .v-delete {
+    margin: 0 10px;
+    float: right;
+  }
+
+  select {
+    border: none;
+    outline: none;
+    width: 30px;
+    -webkit-appearance: none;
+    margin-left: 5px;
+    background-color: #0579C9;
+    color: #fff;
+    text-align: center;
+    padding: 0 5px 0 10px;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &::-ms-expand { 
+      display: none;
+    }
+
+    &:hover {
+      background-color: #0579C9;
+      color: #fff;   
+
+      option {
+        background-color: #fff;
+        color: #000;  
+      } 
+
+    }
+
+  }
+
+  > li:first-of-type {
+
+      > ul:first-of-type {
+        margin-top: 20px;
+      }
+
+  }
+
+  li {
+    margin: 10px 0;
+    position: relative;
+    text-align: left;
+  }
+
+  ul {
+    margin-left: 0;
+
+    li {
+      background-color: #fff;
+      padding: 5px 0 5px 5px;
+      margin: 5px 0;
+      border-radius: 3px;
+
+      .v-level-indicator {
+        display: none;
+      }
+
+      select {
+        background-color: transparent;
+        color: #0579C9;
+
+        &:hover {
+          background-color: #0579C9;
+          color: #fff;      
+        }
+
+      }
+
+      > ul {
+        margin-left: 15px;
+        border-top: 2px solid #f7f7f7;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li {
+          background: #fff;
+          margin: 5px 0 0;
+
+          .v-level-indicator {
+            display: inline-block;
+            transform: rotate(90deg);
+            color: #e0e0e0;
+            margin-right: 15px;
+            margin-left: 5px;
+          }
+
+          > ul {
+            margin-left: 30px;
+          }
+
+        }
+
+      }
+
+
+    }
+    
+  }
+
+}
+
+.v-expandable-details .v-workflow {
+  overflow-x: auto;
+
+  > li {
+    display: flex;
+    align-items: baseline;
+
+    > ul {
+      position: relative;
+      margin-right: 30px;
+
+      > li {
+        padding: 10px 20px;
+        
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+
+      }
+
+      &:first-of-type {
+        margin-top: 0;        
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        border: 1px solid #666;
+        border-width: 1px 1px 0 0;
+        transform: rotate(45deg);
+        right: -18px;
+        top: 25px;
+
+        @media (max-width: 768px) {
+          transform: rotate(135deg);
+          top: auto;
+          right: auto;
+          bottom: 5px;
+          left: 25px;
+        }
+
+      }
+
+      &:last-of-type {
+        
+        &:after {
+          display: none;
+        }
+
+      }
+
+      @media (max-width: 768px) {
+      
+        &:last-of-type {
+          margin-bottom: 0;
+
+          > li:last-of-type {
+            margin-bottom: 0;
+          }
+
+        }
+        
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;    
+      margin-top: 0;
+    }
+
+  }
+
+  ul {
+
+    li {
+      background-color: #f9f9f9;
+      padding: 5px 10px 6px 20px;
+
+      > ul {
+        margin-left: 0;
+
+        li {
+          background: #fff;
+          white-space: nowrap;
+          
+          > ul {
+            margin-left: 20px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  @media (max-width: 768px) {  
+    margin-bottom: 5px;
+  }
+
+}
+

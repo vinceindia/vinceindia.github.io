@@ -1,0 +1,191 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+html {
+  height: 100%;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Roboto",Helvetica,Arial,Verdana,sans-serif;
+  color: $primary-color;
+  background-color: $primary-background-color;
+  font-size: 1rem;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: $primary-cta;  
+
+  &:hover {
+    color: $primary-cta-hover;
+  }
+
+}
+
+/* Divese classes */
+.v-no-show {
+  display: none;
+}
+
+.v-wannabe-link {
+  color: $primary-cta;  
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-cta-hover;
+  }
+  
+}
+
+.v-last-saved {
+  background-color: #fff3cd;
+  padding: 5px 10px;
+  color: #888;
+  display: none;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.v-popover {
+  color: $primary-cta;
+  margin-left: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid $primary-cta;
+}
+
+.v-icons {
+  display: block;
+
+  i {
+    margin: 10px 10px 2px 0;
+    color: #999;
+  }
+
+  a {
+    i {
+      color: inherit;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: inline-block;
+  }
+
+}
+
+.v-favorite {
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  left: auto;
+  bottom: auto;
+
+  &.v-right-bottom {
+    right: 13px;
+    bottom: 15px;
+    top: auto;
+    left: auto;
+  }
+
+  &.v-left-top {
+    left: 13px;
+    top: 15px;
+    right: auto;
+    bottom: auto;
+  }
+
+  &.v-left-bottom {
+    left: 13px;
+    bottom: 15px;
+    right: auto;
+    top: auto;
+  }
+
+  &.v-chosen {
+    color: #ff0000;
+  }
+
+}
+
+.table .v-favorite {
+  position: relative;
+  top: auto;
+  right: auto;
+
+  @media (max-width: 768px) {
+    position: relative;
+    left: 10px;
+    top: 0;
+    margin: 10px 0;
+  }
+  
+}
+
+/* Red ball to indicate new stuff */
+.v-newstuff {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 0 2px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+
+/* Link to UI Kitchen Sink */
+.v-docs {
+  position: fixed;
+  z-index: 2000;
+  padding: 5px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  right: -29px;
+  bottom: 3px;
+  transform: rotate(-45deg);
+  color: #fff;
+  background-color: #ff8f00;
+
+  &:hover {
+    text-decoration: none;
+    background-color: #a55c00;
+    color: #fff;
+  }
+
+}
+
+
+/* Overlay */
+.v-aside-open-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 100;
+}
+
+
+.v-showhide {
+  cursor: pointer;
+
+  &:hover {
+    color: #666;
+  }
+
+}

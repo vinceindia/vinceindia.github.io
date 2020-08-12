@@ -1,0 +1,371 @@
+/* Import variables */
+/* line 4, ../sass/v-overrides-bootstrap.scss */
+table, .table {
+  border-bottom: 1px solid #dee2e6;
+  margin: 20px 0;
+  border-top: none;
+}
+/* line 9, ../sass/v-overrides-bootstrap.scss */
+table .form-group, .table .form-group {
+  margin-bottom: 0;
+}
+/* line 15, ../sass/v-overrides-bootstrap.scss */
+table thead tr, .table thead tr {
+  border-top: none;
+}
+/* line 18, ../sass/v-overrides-bootstrap.scss */
+table thead tr th, .table thead tr th {
+  font-weight: 700;
+  white-space: nowrap;
+  border-top: none;
+  border-bottom: none;
+}
+/* line 29, ../sass/v-overrides-bootstrap.scss */
+table th, table td, .table th, .table td {
+  padding: 10px;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 34, ../sass/v-overrides-bootstrap.scss */
+table tr, .table tr {
+  border-top: 1px solid #000;
+}
+@media (max-width: 768px) {
+  /* line 34, ../sass/v-overrides-bootstrap.scss */
+  table tr, .table tr {
+    border-top: none;
+  }
+}
+@media (max-width: 768px) {
+  /* line 4, ../sass/v-overrides-bootstrap.scss */
+  table, .table {
+    margin: 10px 0;
+  }
+}
+
+/* line 49, ../sass/v-overrides-bootstrap.scss */
+.v-general-main-content .v-table:first-child {
+  margin-top: 0;
+}
+
+/* line 53, ../sass/v-overrides-bootstrap.scss */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fcfcfc;
+}
+@media (max-width: 768px) {
+  /* line 53, ../sass/v-overrides-bootstrap.scss */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+  }
+}
+
+/* line 62, ../sass/v-overrides-bootstrap.scss */
+.btn-primary {
+  background-color: #0579C9;
+  border-color: #0579C9;
+}
+/* line 66, ../sass/v-overrides-bootstrap.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #025c7d;
+}
+
+/* line 71, ../sass/v-overrides-bootstrap.scss */
+.btn-outline-primary {
+  color: #0579C9;
+  border-color: #0579C9;
+}
+/* line 75, ../sass/v-overrides-bootstrap.scss */
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+  background-color: #025c7d;
+  color: #fff;
+}
+
+/* line 81, ../sass/v-overrides-bootstrap.scss */
+.btn-link {
+  color: #0579C9;
+}
+/* line 84, ../sass/v-overrides-bootstrap.scss */
+.btn-link:hover {
+  color: #0579C9;
+}
+
+/* line 89, ../sass/v-overrides-bootstrap.scss */
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #0579C9;
+  border-color: #0579C9;
+  color: #fff;
+}
+
+/* line 94, ../sass/v-overrides-bootstrap.scss */
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #0579C9;
+  border-color: #0579C9;
+  color: #fff;
+}
+
+/* line 99, ../sass/v-overrides-bootstrap.scss */
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+  background-color: #0579C9;
+  border-color: #0579C9;
+  color: #fff;
+}
+
+/* line 104, ../sass/v-overrides-bootstrap.scss */
+aside.v-aside .v-aside-head .btn {
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+/* line 109, ../sass/v-overrides-bootstrap.scss */
+.v-workflow-defaults .form-group {
+  margin: 0 20px;
+}
+
+/* line 113, ../sass/v-overrides-bootstrap.scss */
+.v-workflow-defaults .btn {
+  margin-right: 20px;
+}
+
+/* line 116, ../sass/v-overrides-bootstrap.scss */
+.v-header-actions-primary .btn {
+  margin-bottom: 10px;
+  transition: background-color 500ms, color 500ms;
+}
+
+@media (max-width: 768px) {
+  /* line 120, ../sass/v-overrides-bootstrap.scss */
+  .btn-lg {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+  }
+}
+
+/* line 131, ../sass/v-overrides-bootstrap.scss */
+.form-group .btn {
+  margin-top: 10px;
+}
+
+/* line 137, ../sass/v-overrides-bootstrap.scss */
+main.v-general-main .nav-tabs {
+  border: none;
+}
+/* line 140, ../sass/v-overrides-bootstrap.scss */
+main.v-general-main .nav-tabs .nav-link {
+  border: none;
+}
+/* line 143, ../sass/v-overrides-bootstrap.scss */
+main.v-general-main .nav-tabs .nav-link.active {
+  color: #000;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+}
+/* line 150, ../sass/v-overrides-bootstrap.scss */
+main.v-general-main .nav-tabs .nav-link:focus, main.v-general-main .nav-tabs .nav-link:hover {
+  border: none;
+}
+/* line 158, ../sass/v-overrides-bootstrap.scss */
+main.v-general-main .tab-pane {
+  position: relative;
+}
+
+/* line 164, ../sass/v-overrides-bootstrap.scss */
+.v-element-nav .dropdown-toggle::after {
+  display: none;
+}
+
+/* line 167, ../sass/v-overrides-bootstrap.scss */
+.dropleft .dropdown-toggle::before {
+  display: none;
+}
+
+/* line 171, ../sass/v-overrides-bootstrap.scss */
+.v-select-api-search .form-group {
+  margin-bottom: 5px;
+}
+
+/* line 175, ../sass/v-overrides-bootstrap.scss */
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-weight: 500;
+}
+
+/* line 181, ../sass/v-overrides-bootstrap.scss */
+aside.v-aside .form-group {
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+/* line 186, ../sass/v-overrides-bootstrap.scss */
+aside.v-aside .form-group label {
+  font-weight: 600;
+}
+
+/* line 190, ../sass/v-overrides-bootstrap.scss */
+aside.v-aside .form-group label span {
+  font-weight: 400;
+  display: block;
+  font-size: smaller;
+}
+
+/* line 196, ../sass/v-overrides-bootstrap.scss */
+.form-check-inline .form-check-input {
+  margin-top: -5px;
+}
+
+/* line 200, ../sass/v-overrides-bootstrap.scss */
+.alert {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 207, ../sass/v-overrides-bootstrap.scss */
+.alert ul li {
+  list-style: square;
+  margin-left: 20px;
+}
+@media (max-width: 1400px) {
+  /* line 200, ../sass/v-overrides-bootstrap.scss */
+  .alert {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 200, ../sass/v-overrides-bootstrap.scss */
+  .alert {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+/* line 226, ../sass/v-overrides-bootstrap.scss */
+.v-general-main-header + .alert {
+  margin-top: 20px;
+}
+
+/* line 230, ../sass/v-overrides-bootstrap.scss */
+.navbar-brand {
+  font-size: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #f9f9f9;
+  padding: 16px 30px;
+  background: #000;
+  text-transform: uppercase;
+  margin: -0.5rem 2rem -0.5rem -1rem;
+}
+@media (max-width: 991px) {
+  /* line 230, ../sass/v-overrides-bootstrap.scss */
+  .navbar-brand {
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  /* line 230, ../sass/v-overrides-bootstrap.scss */
+  .navbar-brand {
+    font-size: 12px;
+    padding: 15px 20px;
+    margin-right: auto;
+  }
+}
+
+/* line 256, ../sass/v-overrides-bootstrap.scss */
+.navbar-nav .active {
+  font-weight: 700;
+}
+/* line 259, ../sass/v-overrides-bootstrap.scss */
+.navbar-nav .active a {
+  color: #000;
+}
+@media (max-width: 768px) {
+  /* line 254, ../sass/v-overrides-bootstrap.scss */
+  .navbar-nav {
+    order: 0;
+    width: 100%;
+  }
+  /* line 269, ../sass/v-overrides-bootstrap.scss */
+  .navbar-nav .nav-link {
+    padding: 10px 5px 5px;
+  }
+}
+
+/* line 277, ../sass/v-overrides-bootstrap.scss */
+.pagination {
+  margin-bottom: 15px;
+}
+
+/* line 281, ../sass/v-overrides-bootstrap.scss */
+.v-fullwidth .pagination {
+  margin: 15px 20px;
+}
+
+/* line 285, ../sass/v-overrides-bootstrap.scss */
+.nav-link, .dropdown-item {
+  position: relative;
+}
+
+/* line 289, ../sass/v-overrides-bootstrap.scss */
+.dropdown-header {
+  color: #000;
+  font-weight: 600;
+}
+
+/* line 294, ../sass/v-overrides-bootstrap.scss */
+hr {
+  margin: 10px 0 20px;
+}
+
+/* line 298, ../sass/v-overrides-bootstrap.scss */
+aside.v-aside .v-aside-body hr + h2 {
+  margin-top: 0;
+}
+
+/* line 302, ../sass/v-overrides-bootstrap.scss */
+textarea {
+  width: 100%;
+  padding: 20px;
+  min-height: 300px;
+}
+
+/* line 308, ../sass/v-overrides-bootstrap.scss */
+.v-aside .form-group + .btn {
+  padding-top: 0;
+}
+
+/* line 312, ../sass/v-overrides-bootstrap.scss */
+.form-control + .form-control {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 318, ../sass/v-overrides-bootstrap.scss */
+  .v-general-header .navbar-collapse {
+    margin-top: 10px;
+  }
+
+  /* line 322, ../sass/v-overrides-bootstrap.scss */
+  .v-general-header .navbar-collapse.show {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* line 329, ../sass/v-overrides-bootstrap.scss */
+  .v-general-header .navbar-nav .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* line 335, ../sass/v-overrides-bootstrap.scss */
+  .v-general-header .dropdown-item {
+    padding: 10px 5px 5px;
+    color: #0579C9;
+  }
+}

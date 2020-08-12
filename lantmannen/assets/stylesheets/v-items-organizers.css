@@ -1,0 +1,487 @@
+.left_navigation-vio .v-nav .v-nav-item a{
+    width: 100%;
+     margin-bottom: 0px;
+     text-transform: capitalize;
+     border-bottom: 1px solid #ccc;
+     background: #fff;
+}
+.left_navigation-vio .v-nav .v-nav-item a.active{
+  border-right: 6px solid #0092c8;
+  border-radius: 0px;
+  margin: 1px 0px;
+}
+.v-Result_container table{
+    border-bottom: 0px
+}
+.v-Result_container table tr td span{
+    display: block;
+}
+.v-Result_container table tr td span b{
+      font-weight: 500;
+      /* width: 30%; */
+      font-size: 16px;
+      display: inline-block;
+      text-transform: capitalize;
+}
+.v-Result_container table tr td span span{
+    display: inline-block;
+}
+.v-common-detail-tabs.common_tabs_view .nav-item.nav-link {
+    padding: 10px !important;
+}
+.v-common-cards-view{
+    background: #fff;
+    border-right: 1px solid #ececec
+}
+.common_tabs_view nav{
+    background: transparent
+}
+.common_link a{
+    text-transform: capitalize
+}
+.items_card thead tr th{
+    min-width: 200px
+}
+.items_card thead tr th:first-child,
+.attributes_card thead tr th:first-child{
+    min-width: 225px;
+}
+.attributes_card thead tr th:nth-child(2) {
+    min-width: 225px;
+}
+.attributes_values_card thead tr th:first-child{
+    width: 300px;
+}
+.attributes_values_card thead tr th:nth-child(2){
+    width: 225px;
+}
+.items_card thead tr th:nth-child(2){
+    min-width: 300px;
+}
+.items_card thead tr th:nth-child(3) {
+    min-width: 200px;
+}
+.items_card thead tr th:nth-child(4) {
+    min-width: 150px;
+}
+.price_list_view thead tr th:first-child {
+    min-width:  180px !important;
+}
+.price_list_view thead tr th:nth-child(2) {
+    min-width: 193px !important;
+}
+.price_list_view thead tr th:nth-child(3) {
+    min-width: 200 !important;
+}
+.price_list_view thead tr th {
+    min-width: 300px !important;
+}
+.v-Result_container table td {
+    vertical-align: text-bottom;
+    padding: 10px;
+}
+.v-common-cards-view {
+    border-right: 1px solid #ccc
+}
+.v-Result_container table tr.active_bg {
+    background: #c6f0ff !important;
+    border-left: 4px solid #2196F3;
+}
+.v-Result_container table thead tr.active_bg{
+    background: transparent
+}
+.tab-content .attributes_values_card .v-common-scrollbar{
+     height: calc(100vh - 600px);
+     margin-bottom: 10px;
+}
+.attributes_values_card,
+.attributes_values_card2 {
+        height: calc(100vh - 600px);
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+}
+.attributes_values_card2 h5{
+    background: #92d7f7;
+    border: 1px solid #ccc
+}
+.attributes_values_card2{
+      height: calc(100vh - 500px);
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+}
+.tab-content .attributes_values_card2 .v-common-scrollbar {
+    height: calc(100vh - 590px);
+    margin-bottom: 10px;
+}
+.tab-content .v-common-scrollbar {
+    height: calc(100vh - 147px);
+    overflow-y: scroll;
+}
+.v-Result_container table tr td span font {
+    color: #333;
+    /* font-weight: bold !important; */
+}
+.price_list_tabs{
+    height: 200px;
+}
+
+
+
+.v-list.v-col2>li,
+.v-list.v-col2>div {
+    width: 11%;
+    flex-basis: 32%;
+}
+
+.vio_form_fields .v-general-main-header,
+.vio_form_fields .v-general-main-content,
+.vio_form_fields .v-general-main-toolbar,
+.vio_form_fields .v-list.v-col2 {
+    max-width: 100%;
+}
+.vio_form_fields{
+    height: 100vh;
+}
+.common_tabs_view .v-common-scrollbar{
+    height: 200px;
+}
+.v-Result_container table tr:nth-child(odd),
+.v-table-grid-filter_result table tr:nth-child(odd) {
+    background: transparent;
+}
+.v-Result_container table tr{
+    border-left: 4px solid transparent;
+}
+.v-Result_container table tr:hover,
+.v-table-grid-filter_result table tr:hover {
+    background: #f7f7f7;
+        border-left: 4px solid #2196F3;
+}
+.modal table tr{
+     border-left: 4px solid transparent;
+}
+.modal table tr:hover{
+     border-left: 4px solid #2196F3;
+}
+
+.mobile_view{
+    display: none;
+}
+header.v-editor-header.v-hidden .mobile_view {
+    z-index: 99;
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 22%;
+    display: block;
+}
+header.v-editor-header.v-hidden .mobile_view li a{
+    padding-left: 1.5rem
+}
+
+
+header.v-editor-header.v-hidden .v-editor-header-toggle,
+header.v-editor-header.v-hidden .v-editor-header-toggle:hover {
+    height: 100%;
+    padding-right: 10px;
+    background-color: #fff;
+    color: #333;
+}
+/* responsive view*/
+
+.browser-control {
+    float: left;
+    width: auto;
+    padding: 7px;
+    background: transparent;
+    position: absolute;
+    color: #2196F3;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-left: none;
+    cursor: pointer;
+    right: 20px;
+    top: 0px;
+    z-index: 9;
+    outline: none;
+}
+.common_browser_label{
+     top: 31px;
+}
+
+.v_search_data_table .modal-header input {
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.panel {
+        width: 100%;
+        /* padding: 10px;
+        display: block; */
+}
+.panel a{
+    display: block;
+    width: 100%;
+      color: inherit;
+      padding: 7px 10px;
+      display: inline-block;
+      border: none;
+      position: relative;
+      white-space: nowrap;
+      background-color: #f7f7f7;
+      margin: 2px 0;
+      text-decoration: none
+}
+.expand_collapse a {
+    padding: 5px 25px;
+    margin: 0px;
+}
+.expand_collapse a:hover {
+    background: #f9f9f9 !important;
+}
+.expand_collapse i.nav-icon.far.fa-dot-circle.fleft.pr-2 {
+    color: #7fd3f9;
+    font-size: 12px;
+}
+.arrow.collapsed i.fa-chevron-right,
+.arrow i.fa-angle-down {
+        /* font-family: "Font Awesome 5 Free";
+        content: "\f105" !important;
+        font-size: initial; */
+        -webkit-transition: -webkit-transform .15s;
+        transition: -webkit-transform .15s;
+        transition: transform .15s;
+        transition: transform .15s,
+        -webkit-transform .15s;
+    
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        color: #80898e;
+
+}
+.arrow .fa-chevron-right.common_icon {
+display: none;
+}
+.arrow .fa-angle-down {
+    display: block;
+}
+.arrow.collapsed i.fa-chevron-right {
+    display: block;
+}
+.arrow.collapsed .fa-angle-down{
+    display: none;
+}
+.common_icon{
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        font-size: 16px;
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+   .tab-content .attributes_values_card .v-common-scrollbar {
+       height: calc(100vh - 400px);
+       margin-bottom: 10px;
+   }
+
+   .attributes_values_card,
+   .attributes_values_card2 {
+       height: calc(100vh - 400px);
+       margin-bottom: 10px;
+       border-bottom: 1px solid #ccc;
+   }
+
+   .attributes_values_card2 h5 {
+       background: #92d7f7;
+       border: 1px solid #ccc
+   }
+
+   .attributes_values_card2 {
+       height: calc(100vh - 200px);
+       margin-bottom: 10px;
+       border-bottom: 1px solid #ccc;
+   }
+
+   .tab-content .attributes_values_card2 .v-common-scrollbar {
+       height: calc(100vh - 290x);
+       margin-bottom: 10px;
+   }
+
+   .tab-content .v-common-scrollbar {
+       height: calc(100vh - 147px);
+       overflow-y: scroll;
+   }
+
+   .v-general-main-header,
+   .v-general-main-content,
+   .v-general-main-toolbar {
+       margin: 0 0;
+   }
+}
+
+@media only screen and (min-width: 1440px) {
+    .dashboard-item .col-sm-12.col-md-12.col-lg-6 {
+        flex: 0 0 98%;
+        max-width: 47%;
+        /* min-height: 250px;
+		 */
+    }
+
+    .v-tabs-filter-search .v-general-main-filters .btn-link {
+        margin: 0px;
+    }
+
+    .dashboard-item canvas {
+        width: 100% !important;
+        height: 100% !important;
+        position: relative;
+        margin: auto;
+    }
+
+    .chart_section {
+        min-height: 170px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+.tab-content .attributes_values_card .v-common-scrollbar {
+    height: calc(100vh - 600px);
+    margin-bottom: 10px;
+}
+
+.attributes_values_card,
+.attributes_values_card2 {
+    height: calc(100vh - 600px);
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.attributes_values_card2 h5 {
+    background: #92d7f7;
+    border: 1px solid #ccc
+}
+
+.attributes_values_card2 {
+    height: calc(100vh - 500px);
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-content .attributes_values_card2 .v-common-scrollbar {
+    height: calc(100vh - 590px);
+    margin-bottom: 10px;
+}
+
+.tab-content .v-common-scrollbar {
+    height: calc(100vh - 139px);
+    overflow-y: scroll;
+}
+}
+
+@media only screen and (min-width: 2560px) {
+    .dashboard-item canvas {
+        position: relative;
+    }
+}
+
+/* responsive view*/
+
+
+
+.tab-content .attributes_values_card .attributes_values_price .v-common-scrollbar {
+    height: calc(100vh - 177px);
+    margin-bottom: 10px;
+}
+
+.v-container-filter-result.attributes_values_card.attributes_values_card2.attributes_tabs {
+    border: 0px;
+}
+a.logout{
+    width: 100%;
+        border-right: 4px solid #0092c8 !important;
+}
+.left_navigation-vio .v-nav .v-nav-item a.logout {
+background: #f7f7f7;
+border-right: 5px solid #0092c8;
+border-radius: 0px;
+color: #000;
+width: 100%;
+}
+.logo_header{
+    text-align: center
+}
+.logo_header img{
+    width: 70%;
+    padding: 13px 13px 0px;
+}
+.cirlce_import {
+    font-size: 12px;
+    padding: 9px 10px !important;
+}
+.mobile_logo {
+    width: 15% !important;
+    display: none;
+}
+.v-editor-header.v-hidden .mobile_logo {
+    display: block;
+    /* width: 20px; */
+    position: absolute;
+    top: 43px;
+    /* height: 20px; */
+    left: 211px;
+    z-index: 99999;
+
+}
+.v-editor-header.v-hidden .left_navigation-vio{
+    position: relative;
+    top: 19px;
+}
+
+
+
+
+/* file Upload*/
+#customFile .custom-file-input:lang(en)::after {
+    content: "Select file...";
+}
+
+#customFile .custom-file-input:lang(en)::before {
+    content: "Click me";
+}
+
+/*when a value is selected, this class removes the content */
+.custom-file-input.selected:lang(en)::after {
+    content: "" !important;
+}
+
+.custom-file {
+    overflow: hidden;
+}
+
+.custom-file-input {
+    white-space: nowrap;
+}
+
+.tab-content .import_data_Grid .v-common-scrollbar {
+    height: calc(100vh - 357px);
+    overflow-y: scroll;
+}
+.tab-content .import_data_Grid table thead tr.active_bg{
+    background:transparent !important
+}
+
+
+.w-80{
+    width: 80%
+}
+
+a.canvasjs-chart-credit {
+    display: none;
+}

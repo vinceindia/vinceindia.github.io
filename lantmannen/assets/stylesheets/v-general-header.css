@@ -1,0 +1,81 @@
+/* Import variables */
+/* line 4, ../sass/v-general-header.scss */
+header.v-general-header {
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+/* line 9, ../sass/v-general-header.scss */
+header.v-general-header .v-navbar {
+  max-width: 1400px;
+  margin: auto;
+}
+/* line 14, ../sass/v-general-header.scss */
+header.v-general-header .v-navbar-nav {
+  margin-bottom: -2px;
+}
+/* line 17, ../sass/v-general-header.scss */
+header.v-general-header .v-navbar-nav:hover {
+  background-color: #f7f7f7;
+}
+/* line 25, ../sass/v-general-header.scss */
+header.v-general-header .v-no-arrow i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 30, ../sass/v-general-header.scss */
+header.v-general-header .v-no-arrow:after {
+  display: none;
+}
+@media (max-width: 768px) {
+  /* line 36, ../sass/v-general-header.scss */
+  header.v-general-header .v-profile {
+    order: 1;
+    border-top: 1px solid #e9ecef;
+    margin-top: 20px;
+  }
+}
+/* line 46, ../sass/v-general-header.scss */
+header.v-general-header .v-app-choser {
+  color: #ccc;
+  background-color: #000;
+  margin: -0.5rem 1.2rem -0.5rem -1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+/* line 55, ../sass/v-general-header.scss */
+header.v-general-header .v-app-choser .v-app-choser-apps {
+  position: absolute;
+  background-color: #000;
+  top: 100%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px 20px 20px 10px;
+  margin-top: 3px;
+  display: none;
+  white-space: nowrap;
+}
+/* line 66, ../sass/v-general-header.scss */
+header.v-general-header .v-app-choser .v-app-choser-apps a {
+  display: block;
+  color: #fff;
+  margin: 1px;
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+/* line 73, ../sass/v-general-header.scss */
+header.v-general-header .v-app-choser .v-app-choser-apps a:hover {
+  text-decoration: none;
+  background-color: #333;
+}
+/* line 84, ../sass/v-general-header.scss */
+header.v-general-header .v-app-choser.v-open .v-app-choser-apps {
+  display: block;
+}
+/* line 91, ../sass/v-general-header.scss */
+header.v-general-header .v-app-choser:hover {
+  background-color: #222;
+  color: #fff;
+}

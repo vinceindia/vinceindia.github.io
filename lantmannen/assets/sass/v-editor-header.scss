@@ -1,0 +1,265 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+header.v-editor-header {
+  background-color: $background-color-light;
+  padding: 40px 30px 30px 20px;
+  flex-basis: 250px;
+  width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 500ms;
+  z-index: 100;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #d9d9d9;
+  overflow: auto;
+
+  .v-dropdown-toggle {
+    outline: none;
+  }
+
+  .v-dropdown-toggle:after {
+    display: none;
+  }
+
+  .v-add-component2 {
+    margin: 20px 10px 0 0;
+
+    i {
+      margin-right: 10px;
+    }
+
+  }
+
+  .v-editor-header-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 500ms;
+
+    i {
+      transition: transform 500ms;
+    }
+
+  }
+
+  .v-editor-header-head {
+
+    h1 {
+      line-height: 30px;
+      font-size: 1.4rem;
+
+      &.v-trigger-settings {
+        cursor: pointer;
+
+        &:hover {
+          color: #000;
+        }
+
+      }
+
+    }
+
+    .v-title {
+      border: none;
+      border-bottom: 1px dashed #555;
+      padding: 5px 0 5px;
+      font-size: 20px;
+      color: #555; 
+      width: 100%;
+      outline: 0 none;
+    }
+
+  }
+
+  .v-editor-header-body {
+    flex-grow: 1;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+
+  .v-header-actions {
+    position: relative;
+  }
+
+  .v-header-actions-primary {
+    margin-top: 20px;
+    transition: right 500ms;
+    right: 0;
+    width: auto;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.v-hidden {
+    left: -210px;
+    overflow: visible;
+    padding-right: 40px;
+    
+    .v-editor-header-toggle {
+      height: 100%;
+      padding-right: 10px;
+      background-color: #2f2f2f;
+      color: #fff;
+
+      i {
+        transform: rotate(180deg);
+      }
+
+      &:hover {
+        background-color: #000;
+      }
+
+    }
+
+    + div main.v-editor-main {
+      padding-left: 40px;
+    }
+
+  }
+
+  .v-divider {
+    flex-grow: 1;
+  }
+
+  .v-nav {
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .v-nav-item {
+    padding: 0;
+    color: #555;
+    text-decoration: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .v-make-workflow, .v-make-workflow.active  {      
+      background-color: transparent;
+      padding: 0 0 5px;
+      width: 100%;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;    
+    }
+
+    a {
+      color: inherit;
+      padding: 7px 10px;
+      display: inline-block;
+      border: none;
+      position: relative;
+      white-space: nowrap;
+      background-color: $primary-background-color;
+      margin: 2px 0;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $secondary-background-color;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: #000;
+        background-color: $primary-background-color;
+      }
+
+    }
+
+    .v-delete-component {
+      display: none;
+    }
+
+    .fa-expand-arrows-alt {
+      display: none;
+      transform: rotate(45deg);
+      margin-left: 10px;
+      color: #999;
+      font-size: 0.7rem;
+    }
+
+    a:hover .fa-expand-arrows-alt {
+      display: inline-block;
+    }
+
+    &:hover {
+      
+      .v-delete-component {
+        display: inline-block;
+        text-align: right;
+      }
+
+    }
+
+  }
+
+  .v-level-indicator {
+    position: relative;
+    transform: rotate(90deg);
+    margin-left: 5px;
+    margin-right: 10px;
+    color: #ccc;
+
+    &.v-level-2 {
+      margin-left: 5px;
+    }
+
+    &.v-level-3 {
+      margin-left: 20px;
+    }
+
+    &.v-level-4 {
+      margin-left: 35px;
+    }
+
+    &.v-level-5 {
+      margin-left: 50px;
+    }
+
+    &.v-level-6 {
+      margin-left: 75px;
+    }
+
+    &.v-level-7 {
+      margin-left: 90px;
+    }
+
+    &.v-level-8 {
+      margin-left: 105px;
+    }
+
+    &.v-level-9 {
+      margin-left: 120px;
+    }
+
+    &.v-level-10 {
+      margin-left: 135px;
+    }
+
+  }
+
+}
+
+
+
+
+

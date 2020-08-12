@@ -1,0 +1,241 @@
+/* Import variables */
+/* line 4, ../sass/v-editor-header.scss */
+header.v-editor-header {
+  background-color: #fff;
+  padding: 40px 30px 30px 20px;
+  flex-basis: 250px;
+  width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: left 500ms;
+  z-index: 100;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #d9d9d9;
+  overflow: auto;
+}
+/* line 25, ../sass/v-editor-header.scss */
+header.v-editor-header .v-dropdown-toggle {
+  outline: none;
+}
+/* line 29, ../sass/v-editor-header.scss */
+header.v-editor-header .v-dropdown-toggle:after {
+  display: none;
+}
+/* line 33, ../sass/v-editor-header.scss */
+header.v-editor-header .v-add-component2 {
+  margin: 20px 10px 0 0;
+}
+/* line 36, ../sass/v-editor-header.scss */
+header.v-editor-header .v-add-component2 i {
+  margin-right: 10px;
+}
+/* line 42, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: transform 500ms;
+}
+/* line 50, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-toggle i {
+  transition: transform 500ms;
+}
+/* line 58, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-head h1 {
+  line-height: 30px;
+  font-size: 1.4rem;
+}
+/* line 62, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-head h1.v-trigger-settings {
+  cursor: pointer;
+}
+/* line 65, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-head h1.v-trigger-settings:hover {
+  color: #000;
+}
+/* line 73, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-head .v-title {
+  border: none;
+  border-bottom: 1px dashed #555;
+  padding: 5px 0 5px;
+  font-size: 20px;
+  color: #555;
+  width: 100%;
+  outline: 0 none;
+}
+/* line 85, ../sass/v-editor-header.scss */
+header.v-editor-header .v-editor-header-body {
+  flex-grow: 1;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+/* line 94, ../sass/v-editor-header.scss */
+header.v-editor-header .v-header-actions {
+  position: relative;
+}
+/* line 98, ../sass/v-editor-header.scss */
+header.v-editor-header .v-header-actions-primary {
+  margin-top: 20px;
+  transition: right 500ms;
+  right: 0;
+  width: auto;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+/* line 109, ../sass/v-editor-header.scss */
+header.v-editor-header.v-hidden {
+  left: -210px;
+  overflow: visible;
+  padding-right: 40px;
+}
+/* line 114, ../sass/v-editor-header.scss */
+header.v-editor-header.v-hidden .v-editor-header-toggle {
+  height: 100%;
+  padding-right: 10px;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+/* line 120, ../sass/v-editor-header.scss */
+header.v-editor-header.v-hidden .v-editor-header-toggle i {
+  transform: rotate(180deg);
+}
+/* line 124, ../sass/v-editor-header.scss */
+header.v-editor-header.v-hidden .v-editor-header-toggle:hover {
+  background-color: #000;
+}
+/* line 130, ../sass/v-editor-header.scss */
+header.v-editor-header.v-hidden + div main.v-editor-main {
+  padding-left: 40px;
+}
+/* line 136, ../sass/v-editor-header.scss */
+header.v-editor-header .v-divider {
+  flex-grow: 1;
+}
+/* line 140, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav {
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+/* line 148, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item {
+  padding: 0;
+  color: #555;
+  text-decoration: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 157, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item .v-make-workflow, header.v-editor-header .v-nav-item .v-make-workflow.active {
+  background-color: transparent;
+  padding: 0 0 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 165, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item a {
+  color: inherit;
+  padding: 7px 10px;
+  display: inline-block;
+  border: none;
+  position: relative;
+  white-space: nowrap;
+  background-color: #f7f7f7;
+  margin: 2px 0;
+}
+/* line 175, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item a:hover {
+  text-decoration: none;
+  background-color: #fcfcfc;
+}
+/* line 180, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item a.active {
+  font-weight: 700;
+  color: #000;
+  background-color: #f7f7f7;
+}
+/* line 188, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item .v-delete-component {
+  display: none;
+}
+/* line 192, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item .fa-expand-arrows-alt {
+  display: none;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  color: #999;
+  font-size: 0.7rem;
+}
+/* line 200, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item a:hover .fa-expand-arrows-alt {
+  display: inline-block;
+}
+/* line 206, ../sass/v-editor-header.scss */
+header.v-editor-header .v-nav-item:hover .v-delete-component {
+  display: inline-block;
+  text-align: right;
+}
+/* line 215, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator {
+  position: relative;
+  transform: rotate(90deg);
+  margin-left: 5px;
+  margin-right: 10px;
+  color: #ccc;
+}
+/* line 222, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-2 {
+  margin-left: 5px;
+}
+/* line 226, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-3 {
+  margin-left: 20px;
+}
+/* line 230, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-4 {
+  margin-left: 35px;
+}
+/* line 234, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-5 {
+  margin-left: 50px;
+}
+/* line 238, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-6 {
+  margin-left: 75px;
+}
+/* line 242, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-7 {
+  margin-left: 90px;
+}
+/* line 246, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-8 {
+  margin-left: 105px;
+}
+/* line 250, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-9 {
+  margin-left: 120px;
+}
+/* line 254, ../sass/v-editor-header.scss */
+header.v-editor-header .v-level-indicator.v-level-10 {
+  margin-left: 135px;
+}

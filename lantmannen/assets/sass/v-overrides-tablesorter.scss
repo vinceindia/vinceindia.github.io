@@ -1,0 +1,99 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+
+
+/* TABLESORTER: for tables with class "v-with-sortable-headers" that uses the plugin jquery.tablesorter.min.js */
+
+.v-with-sortable-headers {
+
+  .tablesorter-headerRow {
+
+    .tablesorter-header {
+      outline: none;
+      padding-right: 25px;
+
+      div {
+        display: inline-block;
+        position: relative;
+        padding-right: 20px;
+        cursor: pointer;
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: 5px;
+          top: 6px;
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+          border-bottom: 5px solid #bbb;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          right: 5px;
+          bottom: 6px;
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+          border-top: 5px solid #bbb;
+        }
+
+      }
+
+      &:focus {
+
+        div {
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: inset 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+        
+      }
+
+    }
+
+    .tablesorter-headerDesc {
+
+      div {
+
+        &:after {
+          border-top: 5px solid $primary-cta;
+        }
+
+      }
+
+    }
+
+    .tablesorter-headerAsc {
+
+      div {
+
+        &:before {
+          border-bottom: 5px solid $primary-cta;
+        }
+
+      }
+
+    }
+
+    .sorter-false {
+      cursor: default;
+      padding-right: 10px;
+
+      div {
+        cursor: default;        
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      div:before, div:after {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

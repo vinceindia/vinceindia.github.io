@@ -1,0 +1,1543 @@
+
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Vince VIO</title>
+
+    <link rel="icon" href="assets/images/icons/VinceArtboard-116x16.png" type="image/png" sizes="16x16"/>
+    <link rel="icon" href="assets/images/icons/VinceArtboard-132x32.png" type="image/png" sizes="32x32"/>
+    <link rel="apple-touch-icon" href="assets/images/icons/VinceArtboard-160x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/icons/VinceArtboard-174x74.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/icons/VinceArtboard-1120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/icons/VinceArtboard-1152x152.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet">
+
+    <!-- Twitter Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Imports all custom css -->
+    <link href="assets/stylesheets/import.css" rel="stylesheet">
+      <link href="assets/stylesheets/v-security.css" rel="stylesheet">
+          <link href="assets/stylesheets/v-items-organizers.css" rel="stylesheet">
+
+    <!-- Google-font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body class="overflow-hidden">
+ 
+
+    
+
+    <div class="tab-content">
+
+      <header class="v-editor-header p-0 ">
+<div class="pb-3  vince_logo border-bottom">
+  <h1 class="text-left ml-1"><a href="#" class="logo"><img class="w-80" src="./assets/images/logo1.svg"></a></h5>
+  <!-- <h6 class="text-center">Item Organizer</h6> -->
+</div>
+        <div class="v-editor-header-head">
+          <span class="v-editor-header-toggle"><i class="fas fa-bars"></i></span>
+          <!-- <h1 class="v-trigger-settings">Export articles from M3</h5> -->
+        </div>
+
+         <div class="v-editor-header-body left_navigation-vio mt-0">
+
+             <ul class="nav nav-tabs v-nav" role="tablist">
+                 <!-- <li class="nav-item v-nav-item"><a class="nav-link v-make-workflow active" id="editor0-tab"
+                data-toggle="tab" href="#editor0" role="tab" aria-controls="editor0" aria-selected="true"></a></li> -->
+                 <li class="nav-item v-nav-item"><a class="nav-link " href="./prototype-dashboard.html" role="tab" aria-controls="editor1"
+                         aria-selected="true"><span><i class="fas fa-home pr-2"></i></span>Dashboard</a></li>
+                    <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                            aria-controls="editor2" href="./prototype-import-process.html" aria-selected="false"><i
+                                class="nav-icon far fa fa-upload fleft pr-2"></i> Import
+                            Process</a></li>
+                    <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                            aria-controls="editor2" href="./prototype-supplier-process.html" aria-selected="false"><i
+                                class="nav-icon fas fa-user fleft pr-2"></i> Supplier Mappings</a>
+                    </li>
+                 
+                         <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                         aria-controls="editor2" href="./prototype-vio-new-items.html" aria-selected="false"><i
+                             class="nav-icon far fa-file-alt fleft pr-2"></i> Items</a></li>
+                                      
+                 <li class="nav-item v-nav-item"><a class="nav-link active" id="editor4-tab"
+                         href="./prototype-vio-new-attributes-modal.html" role="tab" aria-controls="editor4"
+                         aria-selected="false"><span><i class="fas fa-border-none  pr-2"></i></span> Attributes Model</a>
+                 </li>
+                 <li class="nav-item v-nav-item"><a class="nav-link" id="editor5-tab"
+                         href="./prototype-vio-new-attributes.html" role="tab" aria-controls="editor5"
+                         aria-selected="false"><span><i class="fas fa-bezier-curve  pr-2"></i></span> Attributes</a></li>
+   <ul class="nav nav-stacked" id="accordion1">
+
+       <li class="panel "> <a data-toggle="collapse" class="arrow" data-parent="#accordion1" href="#firstLink"><span
+                   class="common_icons pr-2"><i class="fa fa-search" aria-hidden="true"></i></span>Lookup
+               <i class="fas fa-chevron-right common_icon"></i>
+               <i class="fas fa-angle-down common_icon"></i>
+           </a>
+
+           <ul id="firstLink" class="collapse expand_collapse">
+               <li><a class="nav-link " id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+                       aria-selected="false">
+                       <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+                       Item Group</a></li>
+               <li><a class="nav-link active" id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+                       aria-selected="false">
+                       <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+                       Product Group</a></li>
+               <li><a class="nav-link active" id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+                       aria-selected="false">
+                       <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+                       Item Type</a></li>
+               <li><a class="nav-link active" id="editor2-tab" role="tab" aria-controls="editor2" href="#"
+                       aria-selected="false">
+                       <i class="nav-icon far fa-dot-circle fleft pr-2"></i>
+                       Supplier
+                   </a></li>
+           </ul>
+
+       </li>
+   </ul>
+
+                 <li class="v-divider v-nav-item"></li>
+
+             </ul>
+             <div class="mobile_view ">
+                 <ul role="tablist" class="nav nav-tabs v-nav">
+                     <li class="nav-item v-nav-item"><a class="nav-link " href="./prototype-dashboard.html" role="tab" aria-controls="editor1"
+                             aria-selected="true"><span><i class="fas fa-home pr-2"></i></span></a></li>
+                      <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                              aria-controls="editor2" href="./prototype-import-process.html" aria-selected="false"><i
+                                  class="nav-icon far fa fa-upload fleft pr-2"></i> </a></li>
+                      <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                              aria-controls="editor2" href="./prototype-supplier-process.html" aria-selected="false"><i
+                                  class="nav-icon fas fa-user fleft pr-2"></i> </a></li>
+                    
+                             <li class="nav-item v-nav-item"><a class="nav-link " id="editor2-tab" role="tab"
+                             aria-controls="editor2" href="./prototype-vio-new-items.html" aria-selected="false"><i
+                                 class="nav-icon far fa-file-alt fleft pr-2"></i> </a></li>
+                     <li class="nav-item v-nav-item"><a class="nav-link active" id="editor4-tab"
+                             href="./prototype-vio-new-attributes-modal.html" role="tab" aria-controls="editor4"
+                             aria-selected="false"><span><i class="fas fa-border-none  pr-2"></i></span> </a>
+                     </li>
+                     <li class="nav-item v-nav-item"><a class="nav-link" id="editor5-tab"
+                             href="./prototype-vio-new-attributes.html" role="tab" aria-controls="editor5"
+                             aria-selected="false"><span><i class="fas fa-bezier-curve  pr-2"></i></span> </a>
+                     </li>
+
+                 </ul>
+             </div>
+
+         </div>
+
+        <div class="v-header-actions">
+ <li class="nav-item v-nav-item no-draggable"><a href="./login.html" class="nav-link nuxt-link-active logout"><i
+             class="fas fa-user-circle ml-2 mr-2"></i> <span class="ml-2"> Signout</span> <i
+             class="fas fa-sign-out-alt float-right p-1"></i></a></li>
+
+    
+
+        </div><!-- end: v-navbar -->
+
+      </header>
+
+      <div id="editor0" class="tab-pane fade show active" role="tabpanel" aria-labelledby="editor0-tab">
+
+        <main class="v-editor-main pr-0 mt-2 ">
+
+          <!-- <div class="v-editor-main-header">  
+            Edit workflow
+          </div>                  -->
+
+         <div class="v-dashboard-main-content p-0 ">
+           <div class="container-fluid user_details_hide pl-2 pr-2 row m-0">
+               <div class="col-md-6 v-first-common-card v-common-cards-view   p-0">
+                   <div class="v-header-title row p-2 m-0">
+                       <div class="col-md-6">
+                           <div class="common_link pb-2">
+                               <a href="./prototype-dashboard.html"><i
+                                       class="fas fa-chevron-left pr-2 "></i>Home</a>
+                           </div>
+                       </div>
+                         <div class="col-md-6 right_import">
+                             <!-- <button title="New User" class="btn v-btn-common-rounded "><i
+                                    class="nav-icon fas fa-plus fleft"></i></button> -->
+                             <a href="./prototype-add-new-vio-attributes-modal.html" class="v-link newuser float-right"><i
+                                     class="fas fa-plus"></i>
+                                 Add
+                                 Attributes Model</a>
+
+
+                         </div>
+                       <div class="col-md-12">
+                           <h5><i class="nav-icon far fa-file-alt   fleft pr-2"></i>Attribute Model </h5>
+                       </div>
+                     
+
+
+                   </div>
+                   <!-- <div class="filter_search p-2">
+                      
+                   </div> -->
+                   <div class="v-general-main-filters m-0 border-top-0">
+
+                        <div class="form-group col-md-12 m-0">
+                            <!-- <label for="api-search" class="sr-only">Search</label> -->
+                            <input type="search" class="form-control v-autocomplete" id="api-search"
+                                aria-describedby="apiSearch" placeholder="Filter">
+                        </div>
+
+                   </div>
+
+                   <div class="v-container-filter-result">
+
+                       <div class="v-Result_container v-common-scrollbar items_card">
+
+                              <table class="table table-striped v-table v-with-sortable-headers mt-0">
+                                <thead class="">
+                                    <tr>
+                                        <th tabindex="0">Attributes</th>
+                                         <th tabindex="0">Description</th>
+                                      
+                                
+                                    </tr>
+                                </thead>
+                                  <tbody>
+
+                               
+
+                                     
+
+
+                                      
+                                      <tr>
+                                        <td><a href="#">
+                                          
+                                                <span><b> Attribute Model:</b>300</span>
+                                               
+                                               
+                                            </a></td>
+                                             <td>
+                                                 <span><b>Description:</b> 300-Serien</span>
+                                                 </td>
+                                       
+                                         
+                                         
+
+                                      </tr>
+                                            <tr>
+                                                <td><a href="#">
+
+                                                        <span><b> Attribute Model:</b>400</span>
+
+
+                                                    </a></td>
+                                                <td>
+                                                    <span><b>Description:</b> 400-Serien</span>
+                                                </td>
+
+
+
+
+                                            </tr>
+                                                     <tr>
+                                                         <td><a href="#">
+
+                                                                 <span><b> Attribute Model:</b>500</span>
+
+
+                                                             </a></td>
+                                                         <td>
+                                                             <span><b>Description:</b> 500-Serien</span>
+                                                         </td>
+
+
+
+
+                                                     </tr>
+                                           
+                                       <!-- <tr>
+                                         <td><a href="#">
+                                             <span><b>Itp:</b>100</span>
+                                             <span><b>item:</b> MALL_TRACTOR</span>
+                                             <span><b>Sales item:</b> 1-Sales item</span>
+                                           </a></td>
+                                         <td>
+                                           <span><b>Attr model:</b> <span>300</span></span>
+                                           <span><b>Config Code:</b> <span>4-Maint item</span></span>
+                                           <span><b>Item category:</b><span> 07-Repairable item</span></span></td>
+
+                                       </tr> -->
+                                      <!-- <tr>
+                                          <td><a href="#">SAL</a></td>
+                                          <td>Sales</td>
+
+                                      </tr>
+                                      <tr>
+                                          <td><a href="#">FIN</a></td>
+                                          <td>Finance</td>
+
+                                      </tr>
+                                       <tr>
+                                           <td><a href="#">PUR</a></td>
+                                           <td>Purchase</td>
+
+                                       </tr>
+                                       <tr>
+                                           <td><a href="#">SAL</a></td>
+                                           <td>Sales</td>
+
+                                       </tr>
+                                       <tr>
+                                           <td><a href="#">FIN</a></td>
+                                           <td>Finance</td>
+
+                                       </tr> -->
+
+
+
+                                  </tbody>
+                              </table>
+
+                       </div>
+                   </div>
+
+
+               </div>
+                <div class="col-md-6 v-second-common-card v-common-cards-view   p-0">
+                  <div class="v-header-title row p-2 m-0">
+                    <div class="col-md-6">
+                      <div class="common_link pb-2 second_card_close">
+                        <a href="#"><i class="fas fa-chevron-left pr-2"></i>Attributes Model</a>
+                      </div>
+                    </div>
+                    <!-- <div class="col-md-6 right_import">
+                     
+                      <a href="#" class="v-link newuser float-right"><i
+                          class="fas fa-plus"></i>
+                        Add
+                        Attributes</a>
+
+
+                    </div> -->
+                    <div class="col-md-12">
+                      <h5><i class="nav-icon far fa-file-alt   fleft pr-2"></i>Attributes </h5>
+                    </div>
+
+
+
+                  </div>
+                  <!-- <div class="filter_search p-2">
+                      
+                   </div> -->
+               <div class="v-general-main-filters m-0 p-2 pr-3 border-top-0">
+
+                   <a href="#" data-toggle="modal" data-target="#role_add_user" title="Attributes"
+                       class="btn text-primary"><i class="fas fa-plus"></i> </a>
+
+                   <div class="v-general-main-filter-divider"></div>
+
+
+
+
+                   <form class="form-group my-lg-0 v-search w-100">
+                       <label for="search-1" class="d-lg-none">
+                           <font style="vertical-align: inherit;">
+                               <font style="vertical-align: inherit;">Filter:</font>
+                           </font>
+                       </label>
+                       <input id="search-1" class="form-control  v-autocomplete2" type="search" placeholder="Filter "
+                           aria-label="Search">
+                       <button class="btn btn-outline-primary my-2 my-sm-0 sr-only" type="submit">
+                           <font style="vertical-align: inherit;">
+                               <font style="vertical-align: inherit;">Search</font>
+                           </font>
+                       </button>
+                   </form>
+
+               </div>
+
+                  <div class="v-container-filter-result attributes_card">
+
+                    <div class="v-Result_container user_details_click v-common-scrollbar">
+
+                    <table class="table table-striped v-table v-with-sortable-headers mt-0">
+                        <thead class="">
+                            <tr>
+                                <th tabindex="0">Items</th>
+                                <th tabindex="0">Groups</th>
+                               
+                    
+                            </tr>
+                        </thead>
+                        <tbody>
+                    
+                    
+                    
+                    
+                    
+                            <tr>
+                                <td>
+                                
+                    
+                                        <span><b>Attribute ID:</b>1005350</span>
+                                        <span><b> Attribute Name:</b> Drag</span>
+                                        <span><b>Attribute Type :</b> 1</span>
+                                            <span><b>Seq no Sorting :</b> 170</span>
+                                    </td>
+                                <td>
+                                    
+                       
+                              
+                                        <span><b>Main Attribute:</b>0</span>
+                                        <span><b> Controlling Obj:</b> 2</span>
+                                        <span><b>Plan Attribute :</b> 0</span>
+                                        <span><b>Cost Attribute :</b> 0</span>
+                                    </td>
+                                
+                    
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1005400</span>
+                                    <span><b> Attribute Name:</b> Drag-/loppstangskulor</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 175</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1006250</span>
+                                    <span><b> Attribute Name:</b> Huvudstrombrytare</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 180</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1007550</span>
+                                    <span><b> Attribute Name:</b> Frontlastarforberedd</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 190</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1008750</span>
+                                    <span><b> Attribute Name:</b> Bakre hjul</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 260</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1009100</span>
+                                    <span><b> Attribute Name:</b> Framre hjul</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 270</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1008800</span>
+                                    <span><b> Attribute Name:</b> Bakskarmar</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 280</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1008850</span>
+                                    <span><b> Attribute Name:</b> Framskamar</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 290</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                            <tr>
+                                <td>
+                            
+                            
+                                    <span><b>Attribute ID:</b>1010050</span>
+                                    <span><b> Attribute Name:</b> 3-4:e funktion</span>
+                                    <span><b>Attribute Type :</b> 1</span>
+                                    <span><b>Seq no Sorting :</b> 330</span>
+                                </td>
+                                <td>
+                            
+                            
+                            
+                                    <span><b>Main Attribute:</b>0</span>
+                                    <span><b> Controlling Obj:</b> 2</span>
+                                    <span><b>Plan Attribute :</b> 0</span>
+                                    <span><b>Cost Attribute :</b> 0</span>
+                                </td>
+                            
+                            
+                            </tr>
+                           
+                         
+                    
+                    
+                        </tbody>
+                    </table>
+
+                    </div>
+                  </div>
+
+
+                </div>
+               <div class="col-md-4 v-third-common-card v-common-cards-view  p-0">
+                   <div class="v-header-title row p-2 m-0">
+                       <div class="col-md-12">
+                           <div class="common_link pb-2">
+                               <a class="v-card-close" href="#"><i class="fas fa-chevron-left pr-2"></i>Attributes</a>
+                           </div>
+                       </div>
+                       <div class="col-md-10 title1 t_common">
+                           <h5><i class="nav-icon fas fa-border-none   fleft pr-2"></i>Attributes Values </h4>
+                               <!-- <h5 class="font-weight-normal">Raghu</h4> -->
+                       </div>
+                       <!--Raghu-->
+                       <div class="col-md-10 title2 t_common">
+                           <h5><i class="nav-icon fas fa-border-none   fleft pr-2"></i>Attributes Values</h4>
+                               <!-- <h5 class="font-weight-normal">Thormod Berger</h4> -->
+                       </div>
+                       <!--Srinivas-->
+                       <div class="col-md-10 title3 t_common">
+                           <h5><i class="nav-icon fas fa-border-none   fleft pr-2"></i>Attributes Values </h4>
+                               <!-- <h5 class="font-weight-normal">Srinivas</h4> -->
+                       </div>
+                       <!--jane-->
+                       <div class="col-md-10 title4 t_common">
+                           <h5><i class="nav-icon fas fa-border-none   fleft pr-2"></i>Attributes Values </h4>
+                               <!-- <h5 class="font-weight-normal">Janne</h4> -->
+                       </div>
+                       <div class="col-md-2 right_import">
+                           <!-- <button title="back" class="btn v-btn-common-rounded"><i
+                                    class="v-card-close nav-icon fas fa-arrow-circle-left fleft"></i></button> -->
+
+
+
+                       </div>
+
+
+                   </div>
+
+                    <!-- <div class="v-general-main-filters m-0 border-top-0">
+
+                        <div class="form-group col-md-12 m-0">
+                          
+                            <input type="search" class="form-control v-autocomplete" id="api-search"
+                                aria-describedby="apiSearch" placeholder="Filter">
+                        </div>
+
+                    </div> -->
+                      <div class="v-general-main-filters m-0 p-2 pr-3 border-top-0">
+
+                          <a href="#" data-toggle="modal" data-target="#attributes_modal" title="Attributes Values"
+                              class="btn text-primary"><i class="fas fa-plus"></i> </a>
+
+                          <div class="v-general-main-filter-divider"></div>
+
+
+
+
+                          <form class="form-group my-lg-0 v-search w-100">
+                              <label for="search-1" class="d-lg-none">
+                                  <font style="vertical-align: inherit;">
+                                      <font style="vertical-align: inherit;">Filter:</font>
+                                  </font>
+                              </label>
+                              <input id="search-1" class="form-control  v-autocomplete2" type="search"
+                                  placeholder="Filter " aria-label="Search">
+                              <button class="btn btn-outline-primary my-2 my-sm-0 sr-only" type="submit">
+                                  <font style="vertical-align: inherit;">
+                                      <font style="vertical-align: inherit;">Search</font>
+                                  </font>
+                              </button>
+                          </form>
+
+                      </div>
+
+                    <div class="v-container-filter-result  attributes_values1">
+
+                        <div class="v-Result_container user_details_click v-common-scrollbar">
+
+                        <table class="table table-striped v-table v-with-sortable-headers mt-0">
+                            <thead class="">
+                                <tr>
+                                    <th tabindex="0">Items</th>
+                                    <th tabindex="0">Itp</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R288</span>
+                                        <span><b>AAttribute Text :</b> 420/85R34 147B MT 30 8 DW15LX3</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R310</span>
+                                        <span><b>AAttribute Text :</b> 480/70R34 143D MT</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R317</span>
+                                        <span><b>AAttribute Text :</b> 480/70R34 143D MI -112 8 DW15L</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R324</span>
+                                        <span><b>AAttribute Text :</b> 540/65R34 145D MI 30 8 DWW18LX</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R325</span>
+                                        <span><b>AAttribute Text :</b> 540/65R34 145A8 MI</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R333</span>
+                                        <span><b>AAttribute Text :</b> 18.4R34 146B MI VF 8
+                                            DW15LX34</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R348</span>
+                                        <span><b>AAttribute Text :</b> 600/65R34 fasta MI</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R352</span>
+                                        <span><b>AAttribute Text :</b> 600/65R34 151D TB 30 8
+                                            W18LX34</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+
+
+                                        <span><b>Seq no Sorting:</b>10</span>
+                                        <span><b> Attribute value:</b> R357</span>
+                                        <span><b>AAttribute Text :</b> 600/65R34 151D TB -112 8
+                                            DW18L</span>
+
+                                    </td>
+                                    <td>
+
+
+
+                                        <span><b>itp:</b>930</span>
+                                        <span><b> Config code :</b> 9-Not Configurbl</span>
+                                        <span><b>Item category :</b> 00-Normal item</span>
+
+                                    </td>
+
+
+                                </tr>
+
+
+
+
+
+                            </tbody>
+                        </table>
+
+                        </div>
+                    </div>
+                    <div
+                        class="v-container-filter-result attributes_values_card attributes_values_card2 attributes_values2">
+                        <h5 class="p-2">Price for Attributes Values</h5>
+
+
+
+                        <section id="tabs" class="v-common-detail-tabs pt-2 pt-1 common_tabs_view">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 p-0">
+                                        <nav>
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab"
+                                                    href="#nav-Roles" role="tab" aria-controls="nav-info"
+                                                    aria-selected="true"><i
+                                                        class="nav-icon fas fa-box-open pr-2 fleft"></i>Price
+                                                </a>
+                                                <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab"
+                                                    href="#nav-workflow" role="tab" aria-controls="nav-home"
+                                                    aria-selected="true"><i
+                                                        class="nav-icon fas fa-dollar-sign pr-2 fleft"></i>Package
+                                                </a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                                    href="#nav-dashboard" role="tab" aria-controls="nav-profile"
+                                                    aria-selected="false"><i
+                                                        class="nav-icon fas fa-link pr-2 fleft"></i>Media</a>
+
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content p-0" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-Roles" role="tabpanel"
+                                                aria-labelledby="nav-info-tab">
+
+                                                <div class="info_tab_list">
+                                             
+                                                    <div class="v-container-filter-result pr-1 price_list_view">
+
+                                                        <div class="v-Result_container  v-common-scrollbar">
+                                                         <table
+                                                             class="table table-striped v-table v-with-sortable-headers mt-0">
+                                                             <thead class="">
+                                                                 <tr>
+                                                                     <th tabindex="0">Price Profile</th>
+                                                                     <th tabindex="0">Sales Price</th>
+                                                                     <th tabindex="0">Cost Price Type</th>
+                                                                     <th tabindex="0">Purchase price</th>
+
+                                                                 </tr>
+                                                             </thead>
+                                                             <tbody>
+
+
+
+
+
+                                                                 <tr>
+                                                                     <td><a href="#">
+
+
+                                                                             <span><b>Id:</b>GP1</span>
+                                                                             <span><b>Name:</b> Generic Pricelist
+                                                                                 1</span>
+
+                                                                         </a></td>
+
+                                                                     <td>
+                                                                         <span><b> Sales Price:</b>
+                                                                             <span>199,00</span></span>
+                                                                         <span><b>Currency Code:</b>
+                                                                             <span>SEK</span></span>
+                                                                         <span><b>ValidFrom:</b><span>
+                                                                                 01-Jan-2020</span></span>
+                                                                     </td>
+
+                                                                     <td><a href="#">
+                                                                             <span><b>Cost Price:</b>10.00</span>
+
+                                                                         </a></td>
+                                                                     <td>
+
+
+                                                                         <span><b> Purchase Price:</b>
+                                                                             <span>EQM</span></span>
+                                                                         <span><b>Currency Code:</b>
+                                                                             <span>ZZZZ</span></span>
+                                                                         <span><b>ValidFrom:</b><span>
+                                                                                 01-Jan-2020</span></span>
+
+                                                                     </td>
+
+
+                                                                 </tr>
+                                                                  <tr>
+                                                                      <td><a href="#">
+
+
+                                                                              <span><b>Id:</b>GP1</span>
+                                                                              <span><b>Name:</b> Generic Pricelist
+                                                                                  2</span>
+
+                                                                          </a></td>
+
+                                                                      <td>
+                                                                          <span><b> Sales Price:</b>
+                                                                              <span>199,00</span></span>
+                                                                          <span><b>Currency Code:</b>
+                                                                              <span>NOK</span></span>
+                                                                          <span><b>ValidFrom:</b><span>
+                                                                                  01-Jan-2020</span></span>
+                                                                      </td>
+
+                                                                      <td><a href="#">
+                                                                              <span><b>Cost Price:</b>10.00</span>
+
+                                                                          </a></td>
+                                                                      <td>
+
+
+                                                                          <span><b> Purchase Price:</b>
+                                                                              <span>EQM</span></span>
+                                                                          <span><b>Currency Code:</b>
+                                                                              <span>ZZZZ</span></span>
+                                                                          <span><b>ValidFrom:</b><span>
+                                                                                  01-Jan-2020</span></span>
+
+                                                                      </td>
+
+
+                                                                  </tr>
+
+
+
+
+
+
+                                                             </tbody>
+                                                         </table>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade " id="nav-workflow" role="tabpanel"
+                                                aria-labelledby="nav-home-tab">
+                                         
+                                            
+                                                <div class="v-container-filter-result ">
+
+                                                    <div class="v-Result_container v-common-scrollbar">
+
+                                                      <h6 class="text-center p-2">Package</h6>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-dashboard" role="tabpanel"
+                                                aria-labelledby="nav-profile-tab">
+                                                <h6 class="text-center p-2">Dashboard</h6>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                     
+                    
+                     
+                    
+                    </div>
+
+
+
+<!-- tabs view-->
+
+                  
+               </div>
+           </div>
+
+
+
+
+         </div>
+        </main>
+        
+
+      
+      </div>
+
+<div class="modal fade v-modal" id="are-you-sure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to delete?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary v-delete-billing" data-dismiss="modal">Yes</button>
+            <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- end: modal -->
+     <div class="modal fade" id="role_add_user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog modal-dialog-scrollable" role="document">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Attributes</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-body">
+                     <div class="v-list v-col1">
+                       <!-- <div class="row p-0">
+                           <div class="col-md-12">
+                               <h6 class="p-0">Roles</h6>
+                           </div>
+
+                       </div>
+                       <div class="row p-0">
+                           <div class="col-md-12">
+                               <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                                   placeholder="SAL" value="">
+                           </div>
+                       </div>
+                         <div class="row p-0">
+                             <div class="col-md-12">
+                                 <h6 class="p-0">User</h6>
+                             </div>
+
+                         </div> -->
+                         <div class="row p-0">
+                             <div class="col-md-12">
+                                 <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                                     placeholder="Filter Search" value="">
+                             </div>
+                         </div>
+                         <div class="row p-0">
+                             <div class="v-table-grid-filter_result pt-1  col-md-12">
+                               <table
+                                   class="table table-striped v-table v-with-sortable-headers tablesorter tablesorter-default tablesorter47a4901e8ec01"
+                                   role="grid">
+                                   <thead>
+                                       <tr role="row" class="tablesorter-headerRow">
+                                           <th tabindex="0" data-column="0"
+                                               class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                               role="columnheader" aria-disabled="false" unselectable="on"
+                                               aria-sort="none"
+                                               aria-label="Name: No sort applied, activate to apply an ascending sort"
+                                               style="user-select: none;">
+                                               <div class="tablesorter-header-inner" title="Sort this column"><input
+                                                       type="checkbox" name="checkall" id="checkall"
+                                                       onclick="check_uncheck_checkbox(this.checked);"
+                                                       value="Select All"></div>
+                                           </th>
+                                           <th tabindex="0" data-column="1"
+                                               class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                               role="columnheader" aria-disabled="false" unselectable="on"
+                                               aria-sort="none"
+                                               aria-label="Email: No sort applied, activate to apply an ascending sort"
+                                               style="user-select: none;">
+                                               <div class="tablesorter-header-inner" title="Sort this column">Code</div>
+                                           </th>
+                                           <th tabindex="0" data-column="2"
+                                               class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                               role="columnheader" aria-disabled="false" unselectable="on"
+                                               aria-sort="none"
+                                               aria-label="Permission: No sort applied, activate to apply an ascending sort"
+                                               style="user-select: none;">
+                                               <div class="tablesorter-header-inner" title="Sort this column">
+                                                   Description</div>
+                                           </th>
+
+                                       </tr>
+                                   </thead>
+                                      <tbody aria-live="polite" aria-relevant="all">
+                                          <tr role="row" class="">
+                                              <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                          id="checkall" onclick="check_uncheck_checkbox(this.checked);"
+                                                          value="Select All"></a></td>
+                                              <td data-attr="Items">
+
+
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Attribute ID:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;">1005350</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;"> Attribute Name:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> Drag</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Attribute Type:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 1</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Seq no Sorting:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 170</font>
+                                                      </font>
+                                                  </span>
+                                              </td>
+                                              <td data-attr="Groups">
+
+
+
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Main Attribute:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;">0</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;"> Controlling Obj:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 2</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Plan Attribute:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 0</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Cost Attribute:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 0</font>
+                                                      </font>
+                                                  </span>
+                                              </td>
+
+
+                                          </tr>
+                                          <tr role="row" class="">
+                                              <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                          id="checkall" onclick="check_uncheck_checkbox(this.checked);"
+                                                          value="Select All"></a></td>
+                                              <td data-attr="Items">
+
+
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Attribute ID:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;">1005400</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;"> Attribute Name:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> Drawbar /
+                                                              loppstangskulor</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Attribute Type:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 1</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Seq no Sorting:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 175</font>
+                                                      </font>
+                                                  </span>
+                                              </td>
+                                              <td data-attr="Groups">
+
+
+
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Main Attribute:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;">0</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;"> Controlling Obj:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 2</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Plan Attribute:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 0</font>
+                                                      </font>
+                                                  </span>
+                                                  <span><b>
+                                                          <font style="vertical-align: inherit;">
+                                                              <font style="vertical-align: inherit;">Cost Attribute:
+                                                              </font>
+                                                          </font>
+                                                      </b>
+                                                      <font style="vertical-align: inherit;">
+                                                          <font style="vertical-align: inherit;"> 0</font>
+                                                      </font>
+                                                  </span>
+                                              </td>
+
+
+                                          </tr>
+
+
+
+
+                                      </tbody>
+                               </table>
+                             </div>
+                         </div>
+
+                     </div>
+
+
+
+
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                     <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">Cancel</button>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+      <div class="modal fade" id="attributes_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Attributes Values</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="v-list v-col1">
+                          <!-- <div class="row p-0">
+                           <div class="col-md-12">
+                               <h6 class="p-0">Roles</h6>
+                           </div>
+
+                       </div>
+                       <div class="row p-0">
+                           <div class="col-md-12">
+                               <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                                   placeholder="SAL" value="">
+                           </div>
+                       </div>
+                         <div class="row p-0">
+                             <div class="col-md-12">
+                                 <h6 class="p-0">User</h6>
+                             </div>
+
+                         </div> -->
+                          <div class="row p-0">
+                              <div class="col-md-12">
+                                  <input type="text" class="form-control col-md-12" id="" aria-describedby=""
+                                      placeholder="Filter Search" value="">
+                              </div>
+                          </div>
+                          <div class="row p-0">
+                              <div class="v-table-grid-filter_result pt-1  col-md-12">
+                                  <table
+                                      class="table table-striped v-table v-with-sortable-headers tablesorter tablesorter-default tablesorter47a4901e8ec01"
+                                      role="grid">
+                                      <thead>
+                                          <tr role="row" class="tablesorter-headerRow">
+                                              <th tabindex="0" data-column="0"
+                                                  class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                                  role="columnheader" aria-disabled="false" unselectable="on"
+                                                  aria-sort="none"
+                                                  aria-label="Name: No sort applied, activate to apply an ascending sort"
+                                                  style="user-select: none;">
+                                                  <div class="tablesorter-header-inner" title="Sort this column"><input
+                                                          type="checkbox" name="checkall" id="checkall"
+                                                          onclick="check_uncheck_checkbox(this.checked);"
+                                                          value="Select All"></div>
+                                              </th>
+                                              <th tabindex="0" data-column="1"
+                                                  class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                                  role="columnheader" aria-disabled="false" unselectable="on"
+                                                  aria-sort="none"
+                                                  aria-label="Email: No sort applied, activate to apply an ascending sort"
+                                                  style="user-select: none;">
+                                                  <div class="tablesorter-header-inner" title="Sort this column">Attributes Values
+                                                  </div>
+                                              </th>
+                                              <th tabindex="0" data-column="2"
+                                                  class="tablesorter-header tablesorter-headerUnSorted" scope="col"
+                                                  role="columnheader" aria-disabled="false" unselectable="on"
+                                                  aria-sort="none"
+                                                  aria-label="Permission: No sort applied, activate to apply an ascending sort"
+                                                  style="user-select: none;">
+                                                  <div class="tablesorter-header-inner" title="Sort this column">
+                                                      ITP</div>
+                                              </th>
+
+                                          </tr>
+                                      </thead>
+                                      <tbody aria-live="polite" aria-relevant="all">
+                                          <tr role="row">
+                                              <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                          id="checkall" onclick="check_uncheck_checkbox(this.checked);"
+                                                          value="Select All"></a></td>
+                                              <td data-attr="Name"><a href="#">R288</a></td>
+                                              <td data-attr="Description">930</td>
+
+                                          </tr>
+                                           <tr role="row">
+                                               <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                           id="checkall" onclick="check_uncheck_checkbox(this.checked);"
+                                                           value="Select All"></a></td>
+                                               <td data-attr="Name"><a href="#">R310</a></td>
+                                               <td data-attr="Description">930</td>
+
+                                           </tr>
+                                            <tr role="row">
+                                                <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                            id="checkall"
+                                                            onclick="check_uncheck_checkbox(this.checked);"
+                                                            value="Select All"></a></td>
+                                                <td data-attr="Name"><a href="#">R317</a></td>
+                                                <td data-attr="Description">930</td>
+
+                                            </tr>
+                                             <tr role="row">
+                                                 <td data-attr="Name"><a href="#"><input type="checkbox" name="checkall"
+                                                             id="checkall"
+                                                             onclick="check_uncheck_checkbox(this.checked);"
+                                                             value="Select All"></a></td>
+                                                 <td data-attr="Name"><a href="#">R324</a></td>
+                                                 <td data-attr="Description">930</td>
+
+                                             </tr>
+                                          
+
+
+
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+
+                      </div>
+
+
+
+
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                      <button type="button" class="btn btn-outline-primary mr-auto" data-dismiss="modal">Cancel</button>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <div class="v-aside-open-overlay"></div>
+
+    <!-- <a href="../index.html" class="v-docs">Docs</a> -->
+
+    <!-- Twitter Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Table sorter -->
+    <script src="assets/js/jquery.tablesorter.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="assets/js/jquery-ui.js"></script>
+
+    <!-- Custom javascript -->
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/add-fake-content.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,98 @@
+/* Import variables */
+@import "_v-variables.scss";
+
+header.v-general-header {
+  background-color: #fff;
+  margin: auto;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  
+  .v-navbar {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .v-navbar-nav {
+    margin-bottom: -2px;
+    
+    &:hover {
+      background-color: $primary-background-color;
+    }
+
+  }
+
+  .v-no-arrow {
+   
+    i {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    &:after {
+      display: none;
+    }
+
+  }
+
+  .v-profile {
+
+    @media (max-width: 768px) {
+      order: 1;
+      border-top: 1px solid #e9ecef;
+      margin-top: 20px;
+    }
+
+  }
+
+  .v-app-choser {
+    color: #ccc;
+    background-color: #000;
+    margin: -0.5rem 1.2rem -0.5rem -1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+
+    .v-app-choser-apps {
+      position: absolute;
+      background-color: #000;
+      top: 100%;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
+      padding: 10px 20px 20px 10px;
+      margin-top: 3px;
+      display: none;
+      white-space: nowrap;
+
+      a {
+        display: block;
+        color: #fff;
+        margin: 1px;
+        padding: 10px;
+        border-bottom: 1px solid #666;
+
+        &:hover {
+          text-decoration: none;
+          background-color: #333;
+        }
+
+      }
+
+    }
+
+    &.v-open {
+
+      .v-app-choser-apps {
+        display: block;
+      }
+
+    }
+
+
+    &:hover {
+      background-color: #222;
+      color: #fff;
+    }
+
+  }
+
+}

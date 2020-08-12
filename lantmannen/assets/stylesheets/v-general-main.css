@@ -1,0 +1,716 @@
+/* Import variables */
+/* line 4, ../sass/v-general-main.scss */
+main.v-general-main {
+  margin: 40px 0 80px;
+}
+@media (max-width: 768px) {
+  /* line 4, ../sass/v-general-main.scss */
+  main.v-general-main {
+    margin: 20px 0 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* line 14, ../sass/v-general-main.scss */
+.v-general-main-header {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  padding: 0 25px 0 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* line 22, ../sass/v-general-main.scss */
+.v-general-main-header .v-back {
+  display: inline-block;
+  margin: 0 0 5px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+/* line 28, ../sass/v-general-main.scss */
+.v-general-main-header .v-back i {
+  margin-right: 5px;
+}
+/* line 32, ../sass/v-general-main.scss */
+.v-general-main-header .v-back:hover {
+  border-bottom: 1px solid #0579C9;
+}
+@media (max-width: 1400px) {
+  /* line 14, ../sass/v-general-main.scss */
+  .v-general-main-header {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 14, ../sass/v-general-main.scss */
+  .v-general-main-header {
+    margin: 0 20px;
+  }
+  /* line 45, ../sass/v-general-main.scss */
+  .v-general-main-header h1 {
+    font-size: 25px;
+  }
+}
+
+/* line 52, ../sass/v-general-main.scss */
+.v-general-main-filters {
+  max-width: 1400px;
+  display: flex;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  margin: 10px auto 0;
+}
+/* line 60, ../sass/v-general-main.scss */
+.v-general-main-filters .v-general-main-filter-divider {
+  border-left: 1px solid #dee2e6;
+  margin: 0 20px;
+}
+@media (max-width: 768px) {
+  /* line 60, ../sass/v-general-main.scss */
+  .v-general-main-filters .v-general-main-filter-divider {
+    border-left: none;
+    border-top: 1px solid #dee2e6;
+    margin: 10px 0 !important;
+  }
+}
+/* line 72, ../sass/v-general-main.scss */
+.v-general-main-filters + .v-general-main-filters {
+  margin-top: 0;
+  border-top: none;
+}
+/* line 77, ../sass/v-general-main.scss */
+.v-general-main-filters.v-custom-tab {
+  padding: 0;
+  border-top: none;
+  margin-top: 20px;
+  border-color: #999;
+}
+/* line 85, ../sass/v-general-main.scss */
+.v-general-main-filters.v-custom-tab .nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+/* line 89, ../sass/v-general-main.scss */
+.v-general-main-filters.v-custom-tab .nav-tabs .nav-link {
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 2px 2px 0 0;
+  border: 1px solid #dee2e6;
+  border-width: 1px 1px 0;
+  padding: 10px 30px;
+}
+/* line 97, ../sass/v-general-main.scss */
+.v-general-main-filters.v-custom-tab .nav-tabs .nav-link.active {
+  background-color: #f7f7f7;
+  border: 1px solid #999;
+  border-bottom: none;
+  padding-bottom: 12px;
+  bottom: -1px;
+  margin-top: -1px;
+}
+/* line 105, ../sass/v-general-main.scss */
+.v-general-main-filters.v-custom-tab .nav-tabs .nav-link.active:hover {
+  border-color: #999;
+}
+/* line 110, ../sass/v-general-main.scss */
+.v-general-main-filters.v-custom-tab .nav-tabs .nav-link:hover {
+  border: 1px solid #fff;
+  border-width: 1px 1px 0;
+}
+/* line 121, ../sass/v-general-main.scss */
+.v-general-main-filters .v-tablesort-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+/* line 126, ../sass/v-general-main.scss */
+.v-general-main-filters .v-tablesort-select label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+/* line 131, ../sass/v-general-main.scss */
+.v-general-main-filters .v-tablesort-select select {
+  cursor: pointer;
+}
+@media (max-width: 1400px) {
+  /* line 52, ../sass/v-general-main.scss */
+  .v-general-main-filters {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 52, ../sass/v-general-main.scss */
+  .v-general-main-filters {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+  /* line 145, ../sass/v-general-main.scss */
+  .v-general-main-filters > * {
+    margin: 5px 0;
+  }
+  /* line 149, ../sass/v-general-main.scss */
+  .v-general-main-filters .ml-auto {
+    margin-left: 0 !important;
+  }
+}
+/* line 155, ../sass/v-general-main.scss */
+.v-general-main-filters .v-search {
+  display: flex;
+  align-items: center;
+}
+/* line 159, ../sass/v-general-main.scss */
+.v-general-main-filters .v-search label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+/* line 168, ../sass/v-general-main.scss */
+.v-general-main-toolbar {
+  max-width: 1400px;
+  display: flex;
+  padding: 10px;
+  margin: 10px auto 0;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  transition: border-radius 500ms, box-shadow 500ms;
+  position: relative;
+  z-index: 100;
+}
+/* line 180, ../sass/v-general-main.scss */
+.v-general-main-toolbar button, .v-general-main-toolbar .btn {
+  margin-right: 10px;
+  transition: background-color 500ms, color 500ms;
+}
+/* line 185, ../sass/v-general-main.scss */
+.v-general-main-toolbar.v-sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -7px 20px -5px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1400px) {
+  /* line 168, ../sass/v-general-main.scss */
+  .v-general-main-toolbar {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 168, ../sass/v-general-main.scss */
+  .v-general-main-toolbar {
+    margin: 0 20px;
+  }
+}
+
+/* line 204, ../sass/v-general-main.scss */
+.v-general-local-toolbar {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  padding: 0 0;
+  margin: 0 auto 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* line 214, ../sass/v-general-main.scss */
+.v-general-main-content {
+  max-width: 1400px;
+  display: flex;
+  padding: 20px 0 0 0;
+  margin: 10px auto 0;
+  flex-direction: column;
+  overflow-x: auto;
+}
+/* line 223, ../sass/v-general-main.scss */
+.v-general-main-content h2 {
+  margin: 20px 0 10px;
+  font-size: 22px;
+}
+@media (max-width: 1400px) {
+  /* line 214, ../sass/v-general-main.scss */
+  .v-general-main-content {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 214, ../sass/v-general-main.scss */
+  .v-general-main-content {
+    margin: 0 20px;
+  }
+}
+
+/* line 238, ../sass/v-general-main.scss */
+.v-list {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+/* line 246, ../sass/v-general-main.scss */
+.v-list .v-list-actions {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+/* line 253, ../sass/v-general-main.scss */
+.v-list .v-list-actions .btn {
+  margin-right: 10px;
+}
+/* line 256, ../sass/v-general-main.scss */
+.v-list .v-list-actions .btn:last-of-type {
+  margin-right: 0;
+}
+/* line 263, ../sass/v-general-main.scss */
+.v-list > li, .v-list > div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1% 1.2% 0;
+  position: relative;
+  background-color: #fff;
+  padding: 10px 40px 10px 20px;
+  width: 100%;
+  min-height: 75px;
+}
+/* line 273, ../sass/v-general-main.scss */
+.v-list > li h3, .v-list > div h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 3px 0 10px;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0 0 10px;
+}
+/* line 283, ../sass/v-general-main.scss */
+.v-list > li dl dd, .v-list > div dl dd {
+  margin-bottom: 10px;
+}
+/* line 289, ../sass/v-general-main.scss */
+.v-list > li > a, .v-list > div > a {
+  display: block;
+}
+/* line 293, ../sass/v-general-main.scss */
+.v-list > li a:hover, .v-list > div a:hover {
+  border-color: #666;
+  text-decoration: none;
+}
+/* line 298, ../sass/v-general-main.scss */
+.v-list > li > span, .v-list > div > span {
+  display: block;
+}
+/* line 304, ../sass/v-general-main.scss */
+.v-list:after {
+  content: '';
+  flex: auto;
+}
+/* line 311, ../sass/v-general-main.scss */
+.v-list.v-col1 > li, .v-list.v-col1 > div {
+  width: 99%;
+  flex-basis: 99%;
+}
+/* line 320, ../sass/v-general-main.scss */
+.v-list.v-col2 > li, .v-list.v-col2 > div {
+  width: 49%;
+  flex-basis: 49%;
+}
+/* line 329, ../sass/v-general-main.scss */
+.v-list.v-col3 > li, .v-list.v-col3 > div {
+  width: 32.3%;
+  flex-basis: auto;
+}
+/* line 338, ../sass/v-general-main.scss */
+.v-list.v-col4 > li, .v-list.v-col4 > div {
+  width: 24%;
+  flex-basis: 24%;
+}
+/* line 347, ../sass/v-general-main.scss */
+.v-list.v-col5 > li, .v-list.v-col5 > div {
+  width: 19%;
+  flex-basis: 19%;
+}
+/* line 356, ../sass/v-general-main.scss */
+.v-list.v-col6 > li, .v-list.v-col6 > div {
+  width: 15.65%;
+  flex-basis: 15.65%;
+}
+/* line 363, ../sass/v-general-main.scss */
+.v-list.v-list-center {
+  justify-content: center;
+}
+/* line 366, ../sass/v-general-main.scss */
+.v-list.v-list-center:after {
+  display: none;
+}
+/* line 374, ../sass/v-general-main.scss */
+.v-list.v-list-transparent > li, .v-list.v-list-transparent > div {
+  background-color: transparent;
+  padding: 10px 0 0;
+}
+/* line 383, ../sass/v-general-main.scss */
+.v-list.v-bootstrap-grid > div {
+  margin: 0;
+  border-right: 15px solid #f7f7f7;
+  border-bottom: 15px solid #f7f7f7;
+}
+/* line 391, ../sass/v-general-main.scss */
+.v-list .v-list-textblock {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  /* line 398, ../sass/v-general-main.scss */
+  .v-list.v-col1 > div, .v-list.v-col2 > div, .v-list.v-col3 > div, .v-list.v-col4 > div, .v-list.v-col5 > div, .v-list.v-col6 > div, .v-list.v-col1 > li, .v-list.v-col2 > li, .v-list.v-col3 > li, .v-list.v-col4 > li, .v-list.v-col5 > li, .v-list.v-col6 > li {
+    width: 99%;
+    flex-basis: 99%;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 407, ../sass/v-general-main.scss */
+.v-list-showhide {
+  display: inline-block;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+/* line 413, ../sass/v-general-main.scss */
+.v-fullwidth {
+  margin: 10px 0 0;
+  max-width: 100%;
+}
+@media (max-width: 1400px) {
+  /* line 413, ../sass/v-general-main.scss */
+  .v-fullwidth {
+    margin: 10px 40px 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 413, ../sass/v-general-main.scss */
+  .v-fullwidth {
+    margin: 0 20px;
+  }
+}
+
+/* line 427, ../sass/v-general-main.scss */
+.v-expandable-list {
+  align-items: flex-start;
+}
+/* line 430, ../sass/v-general-main.scss */
+.v-expandable-list li, .v-expandable-list > div {
+  border: 1px solid #fff;
+}
+/* line 433, ../sass/v-general-main.scss */
+.v-expandable-list li .v-expandable-summary, .v-expandable-list > div .v-expandable-summary {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  min-height: 60px;
+}
+/* line 439, ../sass/v-general-main.scss */
+.v-expandable-list li .v-expandable-summary:hover, .v-expandable-list > div .v-expandable-summary:hover {
+  border-color: #666;
+}
+/* line 443, ../sass/v-general-main.scss */
+.v-expandable-list li .v-expandable-summary .v-workflow-name, .v-expandable-list > div .v-expandable-summary .v-workflow-name {
+  display: block;
+  font-weight: 500;
+}
+@media (max-width: 1400px) {
+  /* line 433, ../sass/v-general-main.scss */
+  .v-expandable-list li .v-expandable-summary, .v-expandable-list > div .v-expandable-summary {
+    left: -3%;
+    max-width: 1400px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 433, ../sass/v-general-main.scss */
+  .v-expandable-list li .v-expandable-summary, .v-expandable-list > div .v-expandable-summary {
+    left: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+/* line 463, ../sass/v-general-main.scss */
+.v-expandable-list li.v-open, .v-expandable-list > div.v-open {
+  padding-bottom: 0;
+}
+/* line 468, ../sass/v-general-main.scss */
+.v-expandable-list li.v-open .v-expandable-summary + .v-expandable-details, .v-expandable-list > div.v-open .v-expandable-summary + .v-expandable-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  /* line 468, ../sass/v-general-main.scss */
+  .v-expandable-list li.v-open .v-expandable-summary + .v-expandable-details, .v-expandable-list > div.v-open .v-expandable-summary + .v-expandable-details {
+    justify-content: flex-start;
+    margin-top: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 768px) {
+  /* line 466, ../sass/v-general-main.scss */
+  .v-expandable-list li.v-open .v-expandable-summary, .v-expandable-list > div.v-open .v-expandable-summary {
+    margin: 0;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 463, ../sass/v-general-main.scss */
+  .v-expandable-list li.v-open, .v-expandable-list > div.v-open {
+    padding: 0;
+  }
+}
+/* line 495, ../sass/v-general-main.scss */
+.v-expandable-list li .v-new-workflow, .v-expandable-list > div .v-new-workflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0579C9;
+}
+/* line 502, ../sass/v-general-main.scss */
+.v-expandable-list li .v-dropdown-toggle, .v-expandable-list > div .v-dropdown-toggle {
+  outline: none;
+}
+/* line 506, ../sass/v-general-main.scss */
+.v-expandable-list li .v-dropdown-toggle:after, .v-expandable-list > div .v-dropdown-toggle:after {
+  display: none;
+}
+/* line 510, ../sass/v-general-main.scss */
+.v-expandable-list li .v-add-component, .v-expandable-list > div .v-add-component {
+  margin: 20px 10px 28px 0;
+}
+/* line 513, ../sass/v-general-main.scss */
+.v-expandable-list li .v-add-component i, .v-expandable-list > div .v-add-component i {
+  margin-right: 10px;
+}
+/* line 519, ../sass/v-general-main.scss */
+.v-expandable-list li .v-component-line, .v-expandable-list > div .v-component-line {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 525, ../sass/v-general-main.scss */
+.v-expandable-list li .v-component-line .v-component, .v-expandable-list > div .v-component-line .v-component {
+  display: inline-block;
+  border: 1px solid #666;
+  padding: 6px 10px;
+  margin: 0 10px 10px;
+  min-width: 110px;
+  background-color: #fff;
+}
+/* line 533, ../sass/v-general-main.scss */
+.v-expandable-list li .v-component-line .v-component:hover, .v-expandable-list > div .v-component-line .v-component:hover {
+  text-decoration: none;
+}
+/* line 537, ../sass/v-general-main.scss */
+.v-expandable-list li .v-component-line .v-component.v-ghost, .v-expandable-list > div .v-component-line .v-component.v-ghost {
+  border: 1px solid transparent;
+}
+/* line 545, ../sass/v-general-main.scss */
+.v-expandable-list li .v-expandable-details, .v-expandable-list > div .v-expandable-details {
+  display: none;
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 30px 20px 30px;
+  position: relative;
+  --leftPosFirst: calc(-100vw + 347%);
+  --leftPosSecond: calc(-100vw + 109%);
+  --leftPosThird: calc(-100vw - 130%);
+  left: calc( var(--leftPosFirst) / 2);
+  width: 100vw;
+  text-align: center;
+  min-height: 100px;
+  flex-wrap: wrap;
+}
+/* line 562, ../sass/v-general-main.scss */
+.v-expandable-list li .v-expandable-details .v-expandable-details-header, .v-expandable-list > div .v-expandable-details .v-expandable-details-header {
+  margin: 0 10px;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  /* line 562, ../sass/v-general-main.scss */
+  .v-expandable-list li .v-expandable-details .v-expandable-details-header, .v-expandable-list > div .v-expandable-details .v-expandable-details-header {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  /* line 545, ../sass/v-general-main.scss */
+  .v-expandable-list li .v-expandable-details, .v-expandable-list > div .v-expandable-details {
+    left: 0 !important;
+    width: auto;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+  /* line 580, ../sass/v-general-main.scss */
+  .v-expandable-list li .v-expandable-details > .v-expandable-details-header, .v-expandable-list > div .v-expandable-details > .v-expandable-details-header {
+    display: none;
+  }
+}
+/* line 588, ../sass/v-general-main.scss */
+.v-expandable-list li .v-workflow-actions, .v-expandable-list > div .v-workflow-actions {
+  margin: 10px;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* line 595, ../sass/v-general-main.scss */
+.v-expandable-list li:nth-child(3n+2) .v-expandable-details, .v-expandable-list > div:nth-child(3n+2) .v-expandable-details {
+  left: calc( var(--leftPosSecond) / 2);
+}
+/* line 598, ../sass/v-general-main.scss */
+.v-expandable-list li:nth-child(3n+3) .v-expandable-details, .v-expandable-list > div:nth-child(3n+3) .v-expandable-details {
+  left: calc( var(--leftPosThird) / 2);
+}
+
+/* line 608, ../sass/v-general-main.scss */
+.v-table .v-element-nav {
+  position: relative;
+  float: right;
+  right: auto;
+  top: auto;
+  margin: -10px 0;
+}
+@media (max-width: 768px) {
+  /* line 608, ../sass/v-general-main.scss */
+  .v-table .v-element-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+/* line 623, ../sass/v-general-main.scss */
+.v-table .v-table-actions {
+  width: 1px;
+}
+@media (max-width: 768px) {
+  /* line 628, ../sass/v-general-main.scss */
+  .v-table th, .v-table thead {
+    display: none;
+  }
+  /* line 631, ../sass/v-general-main.scss */
+  .v-table tbody, .v-table tfoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #C3C3C3;
+  }
+  /* line 637, ../sass/v-general-main.scss */
+  .v-table tbody tr, .v-table tfoot tr {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  /* line 646, ../sass/v-general-main.scss */
+  .v-table tbody tr td, .v-table tfoot tr td {
+    width: 100%;
+    padding: 3px 10px;
+    white-space: normal;
+    border-top: none;
+    display: flex;
+    align-items: center;
+  }
+  /* line 654, ../sass/v-general-main.scss */
+  .v-table tbody tr td:first-of-type, .v-table tfoot tr td:first-of-type {
+    background-color: #fff;
+    padding-top: 10px;
+  }
+  /* line 659, ../sass/v-general-main.scss */
+  .v-table tbody tr td:last-of-type, .v-table tfoot tr td:last-of-type {
+    padding-bottom: 10px;
+  }
+  /* line 663, ../sass/v-general-main.scss */
+  .v-table tbody tr td.v-hide-before-pseudo:before, .v-table tfoot tr td.v-hide-before-pseudo:before {
+    display: none;
+  }
+  /* line 671, ../sass/v-general-main.scss */
+  .v-table tbody img, .v-table tfoot img {
+    margin: 10px auto;
+  }
+  /* line 677, ../sass/v-general-main.scss */
+  .v-table thead + tbody tr td:before, .v-table tbody + tbody tr td:before {
+    content: attr(data-attr);
+    display: inline;
+    min-width: 40px;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+}
+
+/* line 689, ../sass/v-general-main.scss */
+.v-fullwidth > .v-table {
+  margin: 20px;
+  width: auto;
+}
+@media (max-width: 1400px) {
+  /* line 689, ../sass/v-general-main.scss */
+  .v-fullwidth > .v-table {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 689, ../sass/v-general-main.scss */
+  .v-fullwidth > .v-table {
+    margin: 20px 0;
+  }
+}
+
+/* line 703, ../sass/v-general-main.scss */
+h2 + .v-table {
+  margin-top: 0;
+}
+
+/* line 707, ../sass/v-general-main.scss */
+.v-element-nav {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  bottom: auto;
+}
+/* line 713, ../sass/v-general-main.scss */
+.v-element-nav.v-right-bottom {
+  top: auto;
+  bottom: 15px;
+}
+/* line 718, ../sass/v-general-main.scss */
+.v-element-nav:hover {
+  background-color: #f7f7f7;
+}
+
+/* line 724, ../sass/v-general-main.scss */
+.v-formgroup-with-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 728, ../sass/v-general-main.scss */
+.v-formgroup-with-icons .v-formgroup-icons {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+/* line 733, ../sass/v-general-main.scss */
+.v-formgroup-with-icons .v-formgroup-icons i {
+  padding: 0 5px;
+}
+/* line 736, ../sass/v-general-main.scss */
+.v-formgroup-with-icons .v-formgroup-icons i:hover {
+  opacity: 0.8;
+}
+/* line 744, ../sass/v-general-main.scss */
+.v-formgroup-with-icons .form-control {
+  flex-basis: 100%;
+}
